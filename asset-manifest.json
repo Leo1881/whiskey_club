@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d8e94f8.css",
+    "main.js": "/static/js/main.7cf74532.js",
+    "static/js/453.1c7ad309.chunk.js": "/static/js/453.1c7ad309.chunk.js",
+    "static/media/contactimage.jpg": "/static/media/contactimage.a2ead08a7f5abdb882e1.jpg",
+    "static/media/about_us.jpg": "/static/media/about_us.cce3c5cfe4056b61e80a.jpg",
+    "static/media/event1.jpg": "/static/media/event1.de163283928823eafc3e.jpg",
+    "static/media/hero_image.jpeg": "/static/media/hero_image.5a26a6873c053488b390.jpeg",
+    "static/media/logodark.png": "/static/media/logodark.ff272f7e06e7fed45834.png",
+    "static/media/logolight.png": "/static/media/logolight.be426a879d6ca05ac144.png",
+    "static/media/glenfiddich15.jpg": "/static/media/glenfiddich15.dd01e3ccb3fbbfff740d.jpg",
+    "static/media/tamnavulin.jpg": "/static/media/tamnavulin.7dae6c03ddc596778781.jpg",
+    "static/media/belvenie12.jpg": "/static/media/belvenie12.c370ab4b1d9bbdcc8013.jpg",
+    "static/media/lochlomond.jpg": "/static/media/lochlomond.16c5d2cc839c240dd84f.jpg",
+    "static/media/auchentoshen.jpg": "/static/media/auchentoshen.40e01f672927f61f069b.jpg",
+    "static/media/greenspot.jpg": "/static/media/greenspot.017721d1245d80a4a4e6.jpg",
+    "static/media/akashi.jpg": "/static/media/akashi.d0255c85938c52697fb2.jpg",
+    "static/media/tenjaku2.jpg": "/static/media/tenjaku2.c2f3500b6d3466ce3358.jpg",
+    "static/media/kilbeggan.jpg": "/static/media/kilbeggan.f98dd9e07ad9a9575866.jpg",
+    "static/media/toor.jpg": "/static/media/toor.b51d19956288da3499ff.jpg",
+    "static/media/nikkadays.jpg": "/static/media/nikkadays.95f06a50d22b0223b3cc.jpg",
+    "static/media/redbreast12.jpg": "/static/media/redbreast12.f17ac8b28e58565719e7.jpg",
+    "static/media/threeships.jpg": "/static/media/threeships.9d25ecb536ecfccddead.jpg",
+    "static/media/macallen12.jpg": "/static/media/macallen12.3983ad95055b1f436749.jpg",
+    "static/media/ardbeganoa.jpg": "/static/media/ardbeganoa.8aac4fedc6a63078f7be.jpg",
+    "static/media/tenjaku1.jpg": "/static/media/tenjaku1.f99c141839d46c32b174.jpg",
+    "static/media/mcconnells.jpg": "/static/media/mcconnells.ad0e26dd040daffd7363.jpg",
+    "static/media/tullamoredewxo.jpg": "/static/media/tullamoredewxo.a5cae6318551484486f1.jpg",
+    "static/media/irishman.jpg": "/static/media/irishman.d70159707f3519d1e4f5.jpg",
+    "static/media/umiki.jpg": "/static/media/umiki.78c261e83c0d729f8b40.jpg",
+    "static/media/baines.jpg": "/static/media/baines.41b42da1b03a6b3ffb96.jpg",
+    "index.html": "/index.html",
+    "main.0d8e94f8.css.map": "/static/css/main.0d8e94f8.css.map",
+    "main.7cf74532.js.map": "/static/js/main.7cf74532.js.map",
+    "453.1c7ad309.chunk.js.map": "/static/js/453.1c7ad309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d8e94f8.css",
+    "static/js/main.7cf74532.js"
+  ]
+}
