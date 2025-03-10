@@ -152,18 +152,21 @@ function App() {
   };
 
   const handleWhiskeyClick = () => {
+    window.scrollTo(0, 0);
     setShowWhiskeyPage(true);
     setShowMembersPage(false);
     setShowGalleryPage(false);
   };
 
   const handleMembersClick = () => {
+    window.scrollTo(0, 0);
     setShowMembersPage(true);
     setShowWhiskeyPage(false);
     setShowGalleryPage(false);
   };
 
   const handleGalleryClick = () => {
+    window.scrollTo(0, 0);
     setShowGalleryPage(true);
     setShowWhiskeyPage(false);
     setShowMembersPage(false);
@@ -173,7 +176,7 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <AppBar position="fixed">
-          <Toolbar sx={{ py: 3 }}>
+          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
             <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
               <Box
                 component="img"
@@ -267,7 +270,7 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <AppBar position="fixed">
-          <Toolbar sx={{ py: 3 }}>
+          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
             <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
               <Box
                 component="img"
@@ -361,7 +364,7 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <AppBar position="fixed">
-          <Toolbar sx={{ py: 3 }}>
+          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
             <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
               <Box
                 component="img"
@@ -456,7 +459,7 @@ function App() {
       <Box sx={{ flexGrow: 1 }}>
         {/* Navigation Bar */}
         <AppBar position="fixed">
-          <Toolbar sx={{ py: 3 }}>
+          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
             <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
               <Box
                 component="img"
@@ -591,7 +594,8 @@ function App() {
           id="about"
           sx={{
             width: "100%",
-            minHeight: "100vh",
+            px: { xs: 2, sm: 4, md: 8 },
+            minHeight: { xs: "calc(100vh - 96px)", md: "calc(100vh - 120px)" },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             backgroundColor: "background.paper",
@@ -688,109 +692,236 @@ function App() {
           id="events"
           sx={{
             width: "100%",
-            minHeight: "100vh",
+            px: { xs: 2, sm: 4, md: 8 },
+            minHeight: { xs: "calc(100vh - 96px)", md: "calc(100vh - 120px)" },
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
             backgroundColor: "background.default",
             py: { xs: 8, md: "6rem" },
-            px: { xs: 2, sm: 4, md: 8 },
           }}
         >
-          <Typography
-            variant="h2"
-            sx={{
-              color: "secondary.main",
-              mb: { xs: 2, md: 3 },
-              fontFamily: '"Playfair Display", serif',
-              fontSize: { xs: "2.5rem", sm: "2.75rem", md: "3rem" },
-              fontWeight: 700,
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            Next Event
-          </Typography>
-
-          <Typography
-            variant="body1"
-            sx={{
-              color: "primary.main",
-              fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-              lineHeight: 1.8,
-              mb: { xs: 4, md: 6 },
-              maxWidth: "100%",
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            Explore our upcoming events page to stay informed about the latest
-            tastings and social gatherings where you can immerse yourself in the
-            world of whiskey alongside fellow enthusiasts.
-          </Typography>
-
-          {/* Featured Event */}
           <Box
             sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              gap: { xs: "2rem", md: "4rem" },
-              alignItems: { xs: "stretch", md: "center" },
-              position: "relative",
-              paddingBottom: "4rem",
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                height: "2px",
-                backgroundColor: "secondary.main",
-              },
+              maxWidth: "1750px",
+              width: "100%",
+              margin: "0 auto",
             }}
           >
-            {/* Event Image */}
-            <Box
+            <Typography
+              variant="h2"
               sx={{
-                flex: { xs: "none", md: 1 },
-                height: { xs: "300px", sm: "350px", md: "400px" },
-                borderRadius: "24px",
-                overflow: "hidden",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                position: "relative",
+                color: "secondary.main",
+                mb: { xs: 2, md: 3 },
+                fontFamily: '"Playfair Display", serif',
+                fontSize: { xs: "2.5rem", sm: "2.75rem", md: "3rem" },
+                fontWeight: 700,
+                textAlign: { xs: "center", md: "left" },
               }}
             >
+              Next Event
+            </Typography>
+
+            <Typography
+              variant="body1"
+              sx={{
+                color: "primary.main",
+                fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                lineHeight: 1.8,
+                mb: { xs: 4, md: 6 },
+                maxWidth: "100%",
+                textAlign: { xs: "center", md: "left" },
+              }}
+            >
+              Explore our upcoming events page to stay informed about the latest
+              tastings and social gatherings where you can immerse yourself in
+              the world of whiskey alongside fellow enthusiasts.
+            </Typography>
+
+            {/* Featured Event */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                gap: { xs: "2rem", md: "4rem" },
+                alignItems: { xs: "stretch", md: "center" },
+                position: "relative",
+                paddingBottom: "4rem",
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "2px",
+                  backgroundColor: "secondary.main",
+                },
+              }}
+            >
+              {/* Event Image */}
               <Box
                 sx={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundImage: `url(${event1})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  flex: { xs: "none", md: 1 },
+                  height: { xs: "300px", sm: "350px", md: "400px" },
+                  borderRadius: "24px",
+                  overflow: "hidden",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  position: "relative",
                 }}
-              />
+              >
+                <Box
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    backgroundImage: `url(${event1})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+                {/* Date Box */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: { xs: "10px", md: "20px" },
+                    left: { xs: "10px", md: "20px" },
+                    backgroundColor: "background.paper",
+                    padding: { xs: "0.75rem", md: "1rem" },
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    minWidth: { xs: "100px", md: "120px" },
+                    border: "2px solid",
+                    borderColor: "secondary.main",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "secondary.main",
+                      fontSize: { xs: "1rem", md: "1.1rem" },
+                      fontWeight: 700,
+                      mb: 0.5,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Sat
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "secondary.main",
+                      fontSize: { xs: "1.75rem", md: "2rem" },
+                      fontWeight: 800,
+                      lineHeight: 1,
+                      mb: 0.5,
+                    }}
+                  >
+                    27
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "secondary.main",
+                      fontSize: { xs: "0.8rem", md: "0.9rem" },
+                      fontWeight: 600,
+                    }}
+                  >
+                    March 2025
+                  </Typography>
+                </Box>
+              </Box>
+
+              {/* Event Details */}
+              <Box
+                sx={{
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "primary.main",
+                    mb: { xs: 1, md: 2 },
+                    fontFamily: '"Playfair Display", serif',
+                    fontSize: { xs: "2rem", sm: "2.25rem", md: "2.5rem" },
+                    fontWeight: 600,
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  Whiskey Wonderland Tasting
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    mb: { xs: 2, md: 3 },
+                    fontSize: { xs: "1.1rem", md: "1.2rem" },
+                    fontWeight: 900,
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  Host: Fabian
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "primary.main",
+                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                    lineHeight: 1.8,
+                    maxWidth: "600px",
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  Embark on a sensory journey through a selection of rare and
+                  unique whiskey's from around the globe, guided by our expert
+                  connoisseur.
+                </Typography>
+              </Box>
+            </Box>
+
+            {/* Second Event */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                gap: { xs: "1.5rem", md: "4rem" },
+                marginTop: "2rem",
+                position: "relative",
+                paddingBottom: "2rem",
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "2px",
+                  backgroundColor: "secondary.main",
+                },
+              }}
+            >
               {/* Date Box */}
               <Box
                 sx={{
-                  position: "absolute",
-                  top: { xs: "10px", md: "20px" },
-                  left: { xs: "10px", md: "20px" },
                   backgroundColor: "background.paper",
-                  padding: { xs: "0.75rem", md: "1rem" },
+                  padding: { xs: "1.5rem", md: "1rem" },
                   borderRadius: "12px",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                   display: "flex",
-                  flexDirection: "column",
+                  flexDirection: { xs: "row", md: "column" },
                   alignItems: "center",
-                  minWidth: { xs: "100px", md: "120px" },
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  gap: { xs: 3, md: 0.5 },
                   border: "2px solid",
                   borderColor: "secondary.main",
+                  width: { xs: "100%", md: "auto" },
+                  minWidth: { md: "120px" },
+                  flexShrink: 0,
                 }}
               >
                 <Typography
                   sx={{
                     color: "secondary.main",
-                    fontSize: { xs: "1rem", md: "1.1rem" },
+                    fontSize: { xs: "1.2rem", md: "1.1rem" },
                     fontWeight: 700,
-                    mb: 0.5,
                     textTransform: "uppercase",
                   }}
                 >
@@ -799,406 +930,286 @@ function App() {
                 <Typography
                   sx={{
                     color: "secondary.main",
-                    fontSize: { xs: "1.75rem", md: "2rem" },
+                    fontSize: { xs: "2.5rem", md: "2rem" },
                     fontWeight: 800,
                     lineHeight: 1,
-                    mb: 0.5,
                   }}
                 >
-                  27
+                  03
                 </Typography>
                 <Typography
                   sx={{
                     color: "secondary.main",
-                    fontSize: { xs: "0.8rem", md: "0.9rem" },
+                    fontSize: { xs: "1.2rem", md: "0.9rem" },
                     fontWeight: 600,
                   }}
                 >
-                  March 2025
+                  April 2025
+                </Typography>
+              </Box>
+
+              {/* Event Details */}
+              <Box
+                sx={{
+                  flex: { md: 1 },
+                  width: "100%",
+                  textAlign: { xs: "center", md: "left" },
+                }}
+              >
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "primary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontFamily: '"Playfair Display", serif',
+                    fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
+                    fontWeight: 600,
+                  }}
+                >
+                  Special Whiskey Tasting
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontSize: { xs: "1.1rem", md: "1.2rem" },
+                    fontWeight: 900,
+                  }}
+                >
+                  Host: Gaba
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "primary.main",
+                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                    lineHeight: 1.8,
+                    maxWidth: { xs: "800px", md: "100%" },
+                    margin: { xs: "0 auto", md: 0 },
+                  }}
+                >
+                  Discover exclusive whiskey selections with our resident
+                  whiskey sommelier.
                 </Typography>
               </Box>
             </Box>
 
-            {/* Event Details */}
+            {/* Third Event */}
             <Box
               sx={{
-                flex: 1,
                 display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
+                flexDirection: { xs: "column", md: "row" },
+                gap: { xs: "1.5rem", md: "4rem" },
+                marginTop: "2rem",
+                position: "relative",
+                paddingBottom: "2rem",
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "2px",
+                  backgroundColor: "secondary.main",
+                },
               }}
             >
-              <Typography
-                variant="h3"
+              {/* Date Box */}
+              <Box
                 sx={{
-                  color: "primary.main",
-                  mb: { xs: 1, md: 2 },
-                  fontFamily: '"Playfair Display", serif',
-                  fontSize: { xs: "2rem", sm: "2.25rem", md: "2.5rem" },
-                  fontWeight: 600,
+                  backgroundColor: "background.paper",
+                  padding: { xs: "1.5rem", md: "1rem" },
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  display: "flex",
+                  flexDirection: { xs: "row", md: "column" },
+                  alignItems: "center",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  gap: { xs: 3, md: 0.5 },
+                  border: "2px solid",
+                  borderColor: "secondary.main",
+                  width: { xs: "100%", md: "auto" },
+                  minWidth: { md: "120px" },
+                  flexShrink: 0,
+                }}
+              >
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "1.2rem", md: "1.1rem" },
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Sat
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "2.5rem", md: "2rem" },
+                    fontWeight: 800,
+                    lineHeight: 1,
+                  }}
+                >
+                  10
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "1.2rem", md: "0.9rem" },
+                    fontWeight: 600,
+                  }}
+                >
+                  May 2025
+                </Typography>
+              </Box>
+
+              {/* Event Details */}
+              <Box
+                sx={{
+                  flex: { md: 1 },
+                  width: "100%",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
-                Whiskey Wonderland Tasting
-              </Typography>
-              <Typography
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "primary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontFamily: '"Playfair Display", serif',
+                    fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
+                    fontWeight: 600,
+                  }}
+                >
+                  Whiskey & Food Pairing
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontSize: { xs: "1.1rem", md: "1.2rem" },
+                    fontWeight: 900,
+                  }}
+                >
+                  Host: Bradley
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "primary.main",
+                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                    lineHeight: 1.8,
+                    maxWidth: { xs: "800px", md: "100%" },
+                    margin: { xs: "0 auto", md: 0 },
+                  }}
+                >
+                  Explore the art of pairing whickey with gourmet dishes in this
+                  culinary adventure.
+                </Typography>
+              </Box>
+            </Box>
+
+            {/* Fourth Event */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                gap: { xs: "1.5rem", md: "4rem" },
+                marginTop: "2rem",
+              }}
+            >
+              {/* Date Box */}
+              <Box
                 sx={{
-                  color: "secondary.main",
-                  mb: { xs: 2, md: 3 },
-                  fontSize: { xs: "1.1rem", md: "1.2rem" },
-                  fontWeight: 900,
+                  backgroundColor: "background.paper",
+                  padding: { xs: "1.5rem", md: "1rem" },
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  display: "flex",
+                  flexDirection: { xs: "row", md: "column" },
+                  alignItems: "center",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  gap: { xs: 3, md: 0.5 },
+                  border: "2px solid",
+                  borderColor: "secondary.main",
+                  width: { xs: "100%", md: "auto" },
+                  minWidth: { md: "120px" },
+                  flexShrink: 0,
+                }}
+              >
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "1.2rem", md: "1.1rem" },
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Sat
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "2.5rem", md: "2rem" },
+                    fontWeight: 800,
+                    lineHeight: 1,
+                  }}
+                >
+                  17
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    fontSize: { xs: "1.2rem", md: "0.9rem" },
+                    fontWeight: 600,
+                  }}
+                >
+                  June 2025
+                </Typography>
+              </Box>
+
+              {/* Event Details */}
+              <Box
+                sx={{
+                  flex: { md: 1 },
+                  width: "100%",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
-                Host: Fabian
-              </Typography>
-              <Typography
-                sx={{
-                  color: "primary.main",
-                  fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                  lineHeight: 1.8,
-                  maxWidth: "600px",
-                  textAlign: { xs: "center", md: "left" },
-                }}
-              >
-                Embark on a sensory journey through a selection of rare and
-                unique whiskey's from around the globe, guided by our expert
-                connoisseur.
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* Second Event */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              gap: { xs: "1.5rem", md: "4rem" },
-              marginTop: "2rem",
-              position: "relative",
-              paddingBottom: "2rem",
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                height: "2px",
-                backgroundColor: "secondary.main",
-              },
-            }}
-          >
-            {/* Date Box */}
-            <Box
-              sx={{
-                backgroundColor: "background.paper",
-                padding: { xs: "1.5rem", md: "1rem" },
-                borderRadius: "12px",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                display: "flex",
-                flexDirection: { xs: "row", md: "column" },
-                alignItems: "center",
-                justifyContent: { xs: "center", md: "flex-start" },
-                gap: { xs: 3, md: 0.5 },
-                border: "2px solid",
-                borderColor: "secondary.main",
-                width: { xs: "100%", md: "auto" },
-                minWidth: { md: "120px" },
-                flexShrink: 0,
-              }}
-            >
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "1.1rem" },
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                }}
-              >
-                Sat
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "2.5rem", md: "2rem" },
-                  fontWeight: 800,
-                  lineHeight: 1,
-                }}
-              >
-                03
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "0.9rem" },
-                  fontWeight: 600,
-                }}
-              >
-                April 2025
-              </Typography>
-            </Box>
-
-            {/* Event Details */}
-            <Box
-              sx={{
-                flex: { md: 1 },
-                width: "100%",
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              <Typography
-                variant="h3"
-                sx={{
-                  color: "primary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontFamily: '"Playfair Display", serif',
-                  fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
-                  fontWeight: 600,
-                }}
-              >
-                Special Whiskey Tasting
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontSize: { xs: "1.1rem", md: "1.2rem" },
-                  fontWeight: 900,
-                }}
-              >
-                Host: Gaba
-              </Typography>
-              <Typography
-                sx={{
-                  color: "primary.main",
-                  fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                  lineHeight: 1.8,
-                  maxWidth: { xs: "800px", md: "100%" },
-                  margin: { xs: "0 auto", md: 0 },
-                }}
-              >
-                Discover exclusive whiskey selections with our resident whiskey
-                sommelier.
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* Third Event */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              gap: { xs: "1.5rem", md: "4rem" },
-              marginTop: "2rem",
-              position: "relative",
-              paddingBottom: "2rem",
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                height: "2px",
-                backgroundColor: "secondary.main",
-              },
-            }}
-          >
-            {/* Date Box */}
-            <Box
-              sx={{
-                backgroundColor: "background.paper",
-                padding: { xs: "1.5rem", md: "1rem" },
-                borderRadius: "12px",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                display: "flex",
-                flexDirection: { xs: "row", md: "column" },
-                alignItems: "center",
-                justifyContent: { xs: "center", md: "flex-start" },
-                gap: { xs: 3, md: 0.5 },
-                border: "2px solid",
-                borderColor: "secondary.main",
-                width: { xs: "100%", md: "auto" },
-                minWidth: { md: "120px" },
-                flexShrink: 0,
-              }}
-            >
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "1.1rem" },
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                }}
-              >
-                Sat
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "2.5rem", md: "2rem" },
-                  fontWeight: 800,
-                  lineHeight: 1,
-                }}
-              >
-                10
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "0.9rem" },
-                  fontWeight: 600,
-                }}
-              >
-                May 2025
-              </Typography>
-            </Box>
-
-            {/* Event Details */}
-            <Box
-              sx={{
-                flex: { md: 1 },
-                width: "100%",
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              <Typography
-                variant="h3"
-                sx={{
-                  color: "primary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontFamily: '"Playfair Display", serif',
-                  fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
-                  fontWeight: 600,
-                }}
-              >
-                Whiskey & Food Pairing
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontSize: { xs: "1.1rem", md: "1.2rem" },
-                  fontWeight: 900,
-                }}
-              >
-                Host: Bradley
-              </Typography>
-              <Typography
-                sx={{
-                  color: "primary.main",
-                  fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                  lineHeight: 1.8,
-                  maxWidth: { xs: "800px", md: "100%" },
-                  margin: { xs: "0 auto", md: 0 },
-                }}
-              >
-                Explore the art of pairing whickey with gourmet dishes in this
-                culinary adventure.
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* Fourth Event */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              gap: { xs: "1.5rem", md: "4rem" },
-              marginTop: "2rem",
-            }}
-          >
-            {/* Date Box */}
-            <Box
-              sx={{
-                backgroundColor: "background.paper",
-                padding: { xs: "1.5rem", md: "1rem" },
-                borderRadius: "12px",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                display: "flex",
-                flexDirection: { xs: "row", md: "column" },
-                alignItems: "center",
-                justifyContent: { xs: "center", md: "flex-start" },
-                gap: { xs: 3, md: 0.5 },
-                border: "2px solid",
-                borderColor: "secondary.main",
-                width: { xs: "100%", md: "auto" },
-                minWidth: { md: "120px" },
-                flexShrink: 0,
-              }}
-            >
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "1.1rem" },
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                }}
-              >
-                Sat
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "2.5rem", md: "2rem" },
-                  fontWeight: 800,
-                  lineHeight: 1,
-                }}
-              >
-                17
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "1.2rem", md: "0.9rem" },
-                  fontWeight: 600,
-                }}
-              >
-                June 2025
-              </Typography>
-            </Box>
-
-            {/* Event Details */}
-            <Box
-              sx={{
-                flex: { md: 1 },
-                width: "100%",
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              <Typography
-                variant="h3"
-                sx={{
-                  color: "primary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontFamily: '"Playfair Display", serif',
-                  fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
-                  fontWeight: 600,
-                }}
-              >
-                Winter Whiskey Fest
-              </Typography>
-              <Typography
-                sx={{
-                  color: "secondary.main",
-                  mb: { xs: 1, md: 1 },
-                  fontSize: { xs: "1.1rem", md: "1.2rem" },
-                  fontWeight: 900,
-                }}
-              >
-                Host: Roger
-              </Typography>
-              <Typography
-                sx={{
-                  color: "primary.main",
-                  fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                  lineHeight: 1.8,
-                  maxWidth: { xs: "800px", md: "100%" },
-                  margin: { xs: "0 auto", md: 0 },
-                }}
-              >
-                Celebrate winter with a variety of whiskey tastings and live
-                entertainment.
-              </Typography>
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "primary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontFamily: '"Playfair Display", serif',
+                    fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
+                    fontWeight: 600,
+                  }}
+                >
+                  Winter Whiskey Fest
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "secondary.main",
+                    mb: { xs: 1, md: 1 },
+                    fontSize: { xs: "1.1rem", md: "1.2rem" },
+                    fontWeight: 900,
+                  }}
+                >
+                  Host: Roger
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "primary.main",
+                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                    lineHeight: 1.8,
+                    maxWidth: { xs: "800px", md: "100%" },
+                    margin: { xs: "0 auto", md: 0 },
+                  }}
+                >
+                  Celebrate winter with a variety of whiskey tastings and live
+                  entertainment.
+                </Typography>
+              </Box>
             </Box>
           </Box>
         </Box>
@@ -1208,7 +1219,8 @@ function App() {
           id="contact"
           sx={{
             width: "100%",
-            minHeight: "100vh",
+            minHeight: { xs: "calc(100vh - 96px)", md: "calc(100vh - 120px)" },
+            px: { xs: 2, sm: 4, md: 8 },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             backgroundColor: "background.paper",
