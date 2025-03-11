@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import logoLight from "./assets/images/logodark.png";
 import logoWhite from "./assets/images/logolight.png";
@@ -13,6 +13,8 @@ import emailIcon from "./assets/images/email.png";
 import WhiskeyPage from "./components/WhiskeyPage";
 import MembersPage from "./components/MembersPage";
 import GalleryPage from "./components/GalleryPage";
+
+import NavBar from "./components/Navbar";
 
 const theme = createTheme({
   palette: {
@@ -175,92 +177,16 @@ function App() {
   if (showWhiskeyPage) {
     return (
       <ThemeProvider theme={theme}>
-        <AppBar position="fixed">
-          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
-            <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-              <Box
-                component="img"
-                src={logoLight}
-                alt="Logo"
-                sx={{
-                  height: "80px",
-                  marginRight: "16px",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  setShowWhiskeyPage(false);
-                  scrollToSection("hero");
-                }}
-              />
-            </Box>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowWhiskeyPage(false);
-                scrollToSection("hero");
-              }}
-            >
-              Home
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowWhiskeyPage(false);
-                scrollToSection("about");
-              }}
-            >
-              About Us
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowWhiskeyPage(false);
-                scrollToSection("events");
-              }}
-            >
-              Events
-            </Button>
-            <Button
-              onClick={handleWhiskeyClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Whiskies
-            </Button>
-            <Button
-              onClick={handleMembersClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Members
-            </Button>
-            <Button
-              onClick={handleGalleryClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Gallery
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowWhiskeyPage(false);
-                scrollToSection("contact");
-              }}
-            >
-              Contact
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <NavBar
+          logoLight={logoLight}
+          scrollToSection={scrollToSection}
+          handleWhiskeyClick={handleWhiskeyClick}
+          handleMembersClick={handleMembersClick}
+          handleGalleryClick={handleGalleryClick}
+          setShowWhiskeyPage={setShowWhiskeyPage}
+          setShowMembersPage={setShowMembersPage}
+          setShowGalleryPage={setShowGalleryPage}
+        />
         <WhiskeyPage />
       </ThemeProvider>
     );
@@ -269,92 +195,16 @@ function App() {
   if (showMembersPage) {
     return (
       <ThemeProvider theme={theme}>
-        <AppBar position="fixed">
-          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
-            <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-              <Box
-                component="img"
-                src={logoLight}
-                alt="Logo"
-                sx={{
-                  height: "80px",
-                  marginRight: "16px",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  setShowMembersPage(false);
-                  scrollToSection("hero");
-                }}
-              />
-            </Box>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowMembersPage(false);
-                scrollToSection("hero");
-              }}
-            >
-              Home
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowMembersPage(false);
-                scrollToSection("about");
-              }}
-            >
-              About Us
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowMembersPage(false);
-                scrollToSection("events");
-              }}
-            >
-              Events
-            </Button>
-            <Button
-              onClick={handleWhiskeyClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Whiskies
-            </Button>
-            <Button
-              onClick={handleMembersClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Members
-            </Button>
-            <Button
-              onClick={handleGalleryClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Gallery
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowMembersPage(false);
-                scrollToSection("contact");
-              }}
-            >
-              Contact
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <NavBar
+          logoLight={logoLight}
+          scrollToSection={scrollToSection}
+          handleWhiskeyClick={handleWhiskeyClick}
+          handleMembersClick={handleMembersClick}
+          handleGalleryClick={handleGalleryClick}
+          setShowWhiskeyPage={setShowWhiskeyPage}
+          setShowMembersPage={setShowMembersPage}
+          setShowGalleryPage={setShowGalleryPage}
+        />
         <MembersPage />
       </ThemeProvider>
     );
@@ -363,92 +213,16 @@ function App() {
   if (showGalleryPage) {
     return (
       <ThemeProvider theme={theme}>
-        <AppBar position="fixed">
-          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
-            <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-              <Box
-                component="img"
-                src={logoLight}
-                alt="Logo"
-                sx={{
-                  height: "80px",
-                  marginRight: "16px",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  setShowGalleryPage(false);
-                  scrollToSection("hero");
-                }}
-              />
-            </Box>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowGalleryPage(false);
-                scrollToSection("hero");
-              }}
-            >
-              Home
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowGalleryPage(false);
-                scrollToSection("about");
-              }}
-            >
-              About Us
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowGalleryPage(false);
-                scrollToSection("events");
-              }}
-            >
-              Events
-            </Button>
-            <Button
-              onClick={handleWhiskeyClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Whiskies
-            </Button>
-            <Button
-              onClick={handleMembersClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Members
-            </Button>
-            <Button
-              onClick={handleGalleryClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Gallery
-            </Button>
-            <Button
-              color="inherit"
-              onClick={() => {
-                setShowGalleryPage(false);
-                scrollToSection("contact");
-              }}
-            >
-              Contact
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <NavBar
+          logoLight={logoLight}
+          scrollToSection={scrollToSection}
+          handleWhiskeyClick={handleWhiskeyClick}
+          handleMembersClick={handleMembersClick}
+          handleGalleryClick={handleGalleryClick}
+          setShowWhiskeyPage={setShowWhiskeyPage}
+          setShowMembersPage={setShowMembersPage}
+          setShowGalleryPage={setShowGalleryPage}
+        />
         <GalleryPage />
       </ThemeProvider>
     );
@@ -458,65 +232,16 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
         {/* Navigation Bar */}
-        <AppBar position="fixed">
-          <Toolbar sx={{ py: 3, px: { xs: 2, sm: 4, md: 20 } }}>
-            <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-              <Box
-                component="img"
-                src={logoLight}
-                alt="Logo"
-                sx={{
-                  height: "80px",
-                  marginRight: "16px",
-                  cursor: "pointer",
-                }}
-                onClick={() => scrollToSection("hero")}
-              />
-            </Box>
-            <Button color="inherit" onClick={() => scrollToSection("hero")}>
-              Home
-            </Button>
-            <Button color="inherit" onClick={() => scrollToSection("about")}>
-              About Us
-            </Button>
-            <Button color="inherit" onClick={() => scrollToSection("events")}>
-              Events
-            </Button>
-            <Button
-              onClick={handleWhiskeyClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Whiskies
-            </Button>
-            <Button
-              onClick={handleMembersClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Members
-            </Button>
-            <Button
-              onClick={handleGalleryClick}
-              sx={{
-                color: "primary.main",
-                mx: 2,
-                "&:hover": { color: "secondary.main" },
-              }}
-            >
-              Gallery
-            </Button>
-            <Button color="inherit" onClick={() => scrollToSection("contact")}>
-              Contact
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <NavBar
+          logoLight={logoLight}
+          scrollToSection={scrollToSection}
+          handleWhiskeyClick={handleWhiskeyClick}
+          handleMembersClick={handleMembersClick}
+          handleGalleryClick={handleGalleryClick}
+          setShowWhiskeyPage={setShowWhiskeyPage}
+          setShowMembersPage={setShowMembersPage}
+          setShowGalleryPage={setShowGalleryPage}
+        />
 
         {/* Hero Section */}
         <Box
@@ -692,7 +417,7 @@ function App() {
           id="events"
           sx={{
             width: "100%",
-            px: { xs: 2, sm: 4, md: 8 },
+            px: { xs: 2, sm: 4, md: 23 },
             minHeight: { xs: "calc(100vh - 96px)", md: "calc(100vh - 120px)" },
             display: "flex",
             flexDirection: "column",
