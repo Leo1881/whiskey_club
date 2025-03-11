@@ -17,7 +17,7 @@ import memberImage from "../assets/members/faadiel.jpeg";
 const memberData = [
   {
     id: 1,
-    name: "James Wilson",
+    name: "Brandon VD Haer",
     role: "Founding Member",
     type: "Whiskey Connoisseur",
     image: memberImage,
@@ -27,7 +27,7 @@ const memberData = [
   },
   {
     id: 2,
-    name: "Sarah Mitchell",
+    name: "Robin Goodall",
     role: "Master Taster",
     type: "Certified Sommelier",
     image: memberImage,
@@ -37,7 +37,7 @@ const memberData = [
   },
   {
     id: 3,
-    name: "Robert Chen",
+    name: "John Williams",
     role: "Events Coordinator",
     type: "Mixologist",
     image: memberImage,
@@ -47,7 +47,7 @@ const memberData = [
   },
   {
     id: 4,
-    name: "Elena Rodriguez",
+    name: "Roger Niken",
     role: "Education Director",
     type: "Whiskey Historian",
     image: memberImage,
@@ -57,7 +57,7 @@ const memberData = [
   },
   {
     id: 5,
-    name: "Michael O'Connor",
+    name: "Shaun Beckett",
     role: "Irish Whiskey Specialist",
     type: "Brand Ambassador",
     image: memberImage,
@@ -67,7 +67,7 @@ const memberData = [
   },
   {
     id: 6,
-    name: "David Thompson",
+    name: "Bradley Jacobs",
     role: "Tasting Director",
     type: "Flavor Expert",
     image: memberImage,
@@ -77,7 +77,7 @@ const memberData = [
   },
   {
     id: 7,
-    name: "Akiko Yamamoto",
+    name: "Leaveil Johnson",
     role: "Japanese Whisky Expert",
     type: "International Judge",
     image: memberImage,
@@ -87,7 +87,7 @@ const memberData = [
   },
   {
     id: 8,
-    name: "William MacLeod",
+    name: "Gaba Majola",
     role: "Scotch Specialist",
     type: "Master Distiller",
     image: memberImage,
@@ -97,7 +97,7 @@ const memberData = [
   },
   {
     id: 9,
-    name: "Isabella Costa",
+    name: "Fabian Waterson",
     role: "Social Media Director",
     type: "Content Creator",
     image: memberImage,
@@ -107,7 +107,7 @@ const memberData = [
   },
   {
     id: 10,
-    name: "Thomas Burke",
+    name: "Mark Rasseau",
     role: "Bourbon Expert",
     type: "Kentucky Native",
     image: memberImage,
@@ -117,7 +117,7 @@ const memberData = [
   },
   {
     id: 11,
-    name: "Maria Garcia",
+    name: "Kurt",
     role: "Community Manager",
     type: "Event Specialist",
     image: memberImage,
@@ -127,7 +127,7 @@ const memberData = [
   },
   {
     id: 12,
-    name: "Andrew Phillips",
+    name: "Wayne Cannel",
     role: "Collection Curator",
     type: "Rare Whiskey Specialist",
     image: memberImage,
