@@ -11,7 +11,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 
 // Import event image for placeholder
-import event1 from "../assets/images/event1.jpg";
+import event1 from "../assets/images/event1.webp";
 
 // Sample event data - replace with actual events and images
 const eventData = [
