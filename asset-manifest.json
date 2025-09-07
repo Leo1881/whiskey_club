@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/whiskey_club/static/css/main.0d8e94f8.css",
-    "main.js": "/whiskey_club/static/js/main.88867462.js",
+    "main.js": "/whiskey_club/static/js/main.c15e8161.js",
     "static/js/453.affb779f.chunk.js": "/whiskey_club/static/js/453.affb779f.chunk.js",
     "static/media/contactimage.webp": "/whiskey_club/static/media/contactimage.0cd48c5a8a85965adc51.webp",
     "static/media/about_us.webp": "/whiskey_club/static/media/about_us.af69f045199b47aa98e5.webp",
@@ -9,11 +9,17 @@
     "static/media/logolight.png": "/whiskey_club/static/media/logolight.be426a879d6ca05ac144.png",
     "static/media/hero_image.webp": "/whiskey_club/static/media/hero_image.525016868e07c0aa7088.webp",
     "static/media/event1.webp": "/whiskey_club/static/media/event1.54401c8b5f431ca26324.webp",
+    "static/media/lasanta.jpg": "/whiskey_club/static/media/lasanta.31ef52da540e1a6ccb69.jpg",
     "static/media/glenfiddich15.jpg": "/whiskey_club/static/media/glenfiddich15.dd01e3ccb3fbbfff740d.jpg",
+    "static/media/icecream.jpg": "/whiskey_club/static/media/icecream.6324d77365830c987d34.jpg",
+    "static/media/dewars.jpg": "/whiskey_club/static/media/dewars.e471d3b5a4e758df6633.jpg",
+    "static/media/oloroso.jpg": "/whiskey_club/static/media/oloroso.6412378259fab36e0125.jpg",
     "static/media/naked.jpg": "/whiskey_club/static/media/naked.25685f66354735c6ad27.jpg",
     "static/media/whistlercalvados.jpg": "/whiskey_club/static/media/whistlercalvados.b8f7cf8647f3ce81ed92.jpg",
+    "static/media/triple.jpg": "/whiskey_club/static/media/triple.76e4fd0f184c6483c8eb.jpg",
     "static/media/scallywag.jpg": "/whiskey_club/static/media/scallywag.7252cac9014c9b80362b.jpg",
     "static/media/mosaic.jpg": "/whiskey_club/static/media/mosaic.ddfac845c9d7760d9d82.jpg",
+    "static/media/chivas15.jpg": "/whiskey_club/static/media/chivas15.e7bba852c1436922b3a0.jpg",
     "static/media/smokehead.jpg": "/whiskey_club/static/media/smokehead.869d3d8cedc568127ef1.jpg",
     "static/media/mhclassic.jpg": "/whiskey_club/static/media/mhclassic.cba88ad88fcef1c30a35.jpg",
     "static/media/cadbol.jpg": "/whiskey_club/static/media/cadbol.f928080495cf69650791.jpg",
@@ -23,7 +29,9 @@
     "static/media/taliskersingle.jpg": "/whiskey_club/static/media/taliskersingle.163ee635a00047d1dddb.jpg",
     "static/media/whistlergood.jpg": "/whiskey_club/static/media/whistlergood.b21f85cd27bb997ac564.jpg",
     "static/media/jacksingle.jpg": "/whiskey_club/static/media/jacksingle.a323ffae761f8efc5725.jpg",
+    "static/media/px.jpg": "/whiskey_club/static/media/px.32105e1065968653cd0e.jpg",
     "static/media/indri.jpg": "/whiskey_club/static/media/indri.04dcffec0c7711f6b4ff.jpg",
+    "static/media/signet.jpg": "/whiskey_club/static/media/signet.46eb60cfe509272429f9.jpg",
     "static/media/laphroaigselect.jpg": "/whiskey_club/static/media/laphroaigselect.88f011dc2778c331054e.jpg",
     "static/media/kavalan.jpg": "/whiskey_club/static/media/kavalan.972629e69791884c0750.jpg",
     "static/media/amrut.jpg": "/whiskey_club/static/media/amrut.482b456d732b1bcb6df1.jpg",
@@ -55,11 +63,11 @@
     "static/media/compass.jpg": "/whiskey_club/static/media/compass.1019204f8f372847563b.jpg",
     "index.html": "/whiskey_club/index.html",
     "main.0d8e94f8.css.map": "/whiskey_club/static/css/main.0d8e94f8.css.map",
-    "main.88867462.js.map": "/whiskey_club/static/js/main.88867462.js.map",
+    "main.c15e8161.js.map": "/whiskey_club/static/js/main.c15e8161.js.map",
     "453.affb779f.chunk.js.map": "/whiskey_club/static/js/453.affb779f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d8e94f8.css",
-    "static/js/main.88867462.js"
+    "static/js/main.c15e8161.js"
   ]
 }
