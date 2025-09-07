@@ -553,7 +553,7 @@ const whiskeyData = [
   {
     id: 49,
     name: "Glenmorangie Lasanta",
-    region: "Highlands, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: lasanta,
     rating: 4.2,
@@ -563,7 +563,7 @@ const whiskeyData = [
   {
     id: 50,
     name: "Glenmorangie Triple Reserve (Quinta Ruban / Nectar d'Or variant)",
-    region: "Highlands, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: triple,
     rating: 4.2,
@@ -573,7 +573,7 @@ const whiskeyData = [
   {
     id: 51,
     name: "Glenmorangie Signet",
-    region: "Highlands, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: signet,
     rating: 4.4,
@@ -583,7 +583,7 @@ const whiskeyData = [
   {
     id: 52,
     name: "Glenmorangie A Tale of Ice Cream",
-    region: "Highlands, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: icecream,
     rating: 4.3,
