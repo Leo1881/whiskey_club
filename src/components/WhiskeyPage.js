@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import {
   Box,
   Typography,
@@ -7,6 +7,10 @@ import {
   DialogContent,
   Rating,
   IconButton,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -260,7 +264,7 @@ const whiskeyData = [
     id: 22,
     name: "The Whistler The Good, The Bad & The Smoky",
     region: "Ireland",
-    type: "Blended Malt",
+    type: "Blended",
     image: whistlergood,
     rating: 4.1,
     description:
@@ -289,7 +293,7 @@ const whiskeyData = [
   {
     id: 25,
     name: "Glenmorangie 15 Year",
-    region: "Highlands, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: cadbol,
     rating: 4.5,
@@ -310,7 +314,7 @@ const whiskeyData = [
     id: 27,
     name: "Naked Malt",
     region: "Scotland",
-    type: "Blended Malt",
+    type: "Blended",
     image: naked,
     rating: 4.0,
     description:
@@ -330,7 +334,7 @@ const whiskeyData = [
     id: 29,
     name: "Scallywag",
     region: "Speyside, Scotland",
-    type: "Blended Malt",
+    type: "Blended",
     image: scallywag,
     rating: 4.1,
     description:
@@ -370,6 +374,8 @@ const whiskeyData = [
 
 function WhiskeyPage() {
   const [selectedWhiskey, setSelectedWhiskey] = useState(null);
+  const [filterType, setFilterType] = useState("all");
+  const [filterValue, setFilterValue] = useState("all");
 
   const handleWhiskeyClick = (whiskey) => {
     setSelectedWhiskey(whiskey);
@@ -378,6 +384,52 @@ function WhiskeyPage() {
   const handleClose = () => {
     setSelectedWhiskey(null);
   };
+
+  const handleFilterTypeChange = (event) => {
+    setFilterType(event.target.value);
+    setFilterValue("all"); // Reset filter value when changing type
+  };
+
+  const handleFilterValueChange = (event) => {
+    setFilterValue(event.target.value);
+  };
+
+  // Get unique regions and types for filter options
+  const uniqueRegions = useMemo(() => {
+    const regions = [...new Set(whiskeyData.map((whiskey) => whiskey.region))];
+    return regions.sort();
+  }, []);
+
+  const uniqueTypes = useMemo(() => {
+    const types = [...new Set(whiskeyData.map((whiskey) => whiskey.type))];
+    return types.sort();
+  }, []);
+
+  // Filter whiskeys based on selected filters
+  const filteredWhiskeys = useMemo(() => {
+    if (filterType === "all" || filterValue === "all") {
+      return whiskeyData;
+    }
+
+    return whiskeyData.filter((whiskey) => {
+      if (filterType === "region") {
+        return whiskey.region === filterValue;
+      } else if (filterType === "type") {
+        return whiskey.type === filterValue;
+      }
+      return true;
+    });
+  }, [filterType, filterValue]);
+
+  // Get filter options based on selected filter type
+  const filterOptions = useMemo(() => {
+    if (filterType === "region") {
+      return uniqueRegions;
+    } else if (filterType === "type") {
+      return uniqueTypes;
+    }
+    return [];
+  }, [filterType, uniqueRegions, uniqueTypes]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -428,9 +480,117 @@ function WhiskeyPage() {
           extraordinary spirit.
         </Typography>
 
+        {/* Filter Section */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            gap: 2,
+            mb: 4,
+            alignItems: "center",
+            justifyContent: "center",
+            maxWidth: "600px",
+            width: "100%",
+          }}
+        >
+          <FormControl
+            sx={{
+              minWidth: { xs: "100%", sm: "200px" },
+              "& .MuiOutlinedInput-root": {
+                color: "white",
+                "& fieldset": {
+                  borderColor: "rgba(255, 255, 255, 0.3)",
+                },
+                "&:hover fieldset": {
+                  borderColor: "rgba(255, 255, 255, 0.5)",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "secondary.main",
+                },
+              },
+              "& .MuiInputLabel-root": {
+                color: "rgba(255, 255, 255, 0.7)",
+                "&.Mui-focused": {
+                  color: "secondary.main",
+                },
+              },
+            }}
+          >
+            <InputLabel>Filter by</InputLabel>
+            <Select
+              value={filterType}
+              onChange={handleFilterTypeChange}
+              label="Filter by"
+            >
+              <MenuItem value="all">All Whiskeys</MenuItem>
+              <MenuItem value="region">Region</MenuItem>
+              <MenuItem value="type">Type</MenuItem>
+            </Select>
+          </FormControl>
+
+          {filterType !== "all" && (
+            <FormControl
+              sx={{
+                minWidth: { xs: "100%", sm: "200px" },
+                "& .MuiOutlinedInput-root": {
+                  color: "white",
+                  "& fieldset": {
+                    borderColor: "rgba(255, 255, 255, 0.3)",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "rgba(255, 255, 255, 0.5)",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "secondary.main",
+                  },
+                },
+                "& .MuiInputLabel-root": {
+                  color: "rgba(255, 255, 255, 0.7)",
+                  "&.Mui-focused": {
+                    color: "secondary.main",
+                  },
+                },
+              }}
+            >
+              <InputLabel>
+                {filterType === "region" ? "Select Region" : "Select Type"}
+              </InputLabel>
+              <Select
+                value={filterValue}
+                onChange={handleFilterValueChange}
+                label={
+                  filterType === "region" ? "Select Region" : "Select Type"
+                }
+              >
+                <MenuItem value="all">
+                  All {filterType === "region" ? "Regions" : "Types"}
+                </MenuItem>
+                {filterOptions.map((option) => (
+                  <MenuItem key={option} value={option}>
+                    {option}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          )}
+        </Box>
+
+        {/* Results Count */}
+        <Typography
+          sx={{
+            color: "white",
+            fontSize: "1rem",
+            mb: 3,
+            opacity: 0.8,
+            textAlign: "center",
+          }}
+        >
+          Showing {filteredWhiskeys.length} of {whiskeyData.length} whiskeys
+        </Typography>
+
         {/* Whiskey Grid */}
         <Grid container spacing={4}>
-          {whiskeyData.map((whiskey) => (
+          {filteredWhiskeys.map((whiskey) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={whiskey.id}>
               <Box
                 sx={{
