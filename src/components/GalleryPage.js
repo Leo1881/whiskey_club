@@ -54,6 +54,19 @@ const eventData = [
       { id: 4, src: event1, caption: "Irish whiskey selection" },
     ],
   },
+  {
+    id: 4,
+    title: "Dullstroom Weekend Away",
+    date: "May 23, 2025",
+    coverImage: event1,
+    description: "A journey through Ireland's finest distilleries",
+    images: [
+      { id: 1, src: event1, caption: "Redbreast tasting" },
+      { id: 2, src: event1, caption: "Members enjoying" },
+      { id: 3, src: event1, caption: "Event setup" },
+      { id: 4, src: event1, caption: "Irish whiskey selection" },
+    ],
+  },
 ];
 
 // Image component with loading state

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, IconButton } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import logoLight from "./assets/images/logodark.png";
 import logoWhite from "./assets/images/logolight.png";
 import heroImage from "./assets/images/hero_image.webp";
@@ -540,7 +542,7 @@ function App() {
                       mb: 0.5,
                     }}
                   >
-                    27
+                    11
                   </Typography>
                   <Typography
                     sx={{
@@ -549,7 +551,7 @@ function App() {
                       fontWeight: 600,
                     }}
                   >
-                    March 2025
+                    Oct 2025
                   </Typography>
                 </Box>
               </Box>
@@ -585,7 +587,7 @@ function App() {
                     textAlign: { xs: "center", md: "left" },
                   }}
                 >
-                  Host: Fabian
+                  Host: Wayne
                 </Typography>
                 <Typography
                   sx={{
@@ -660,7 +662,7 @@ function App() {
                     lineHeight: 1,
                   }}
                 >
-                  03
+                  22
                 </Typography>
                 <Typography
                   sx={{
@@ -669,7 +671,7 @@ function App() {
                     fontWeight: 600,
                   }}
                 >
-                  April 2025
+                  Nov 2025
                 </Typography>
               </Box>
 
@@ -701,7 +703,7 @@ function App() {
                     fontWeight: 900,
                   }}
                 >
-                  Host: Gaba
+                  Host: Lee
                 </Typography>
                 <Typography
                   sx={{
@@ -775,7 +777,7 @@ function App() {
                     lineHeight: 1,
                   }}
                 >
-                  10
+                  13
                 </Typography>
                 <Typography
                   sx={{
@@ -784,7 +786,7 @@ function App() {
                     fontWeight: 600,
                   }}
                 >
-                  May 2025
+                  Dec 2025
                 </Typography>
               </Box>
 
@@ -816,7 +818,7 @@ function App() {
                     fontWeight: 900,
                   }}
                 >
-                  Host: Bradley
+                  Host: Gaba
                 </Typography>
                 <Typography
                   sx={{
@@ -829,110 +831,6 @@ function App() {
                 >
                   Explore the art of pairing whickey with gourmet dishes in this
                   culinary adventure.
-                </Typography>
-              </Box>
-            </Box>
-
-            {/* Fourth Event */}
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", md: "row" },
-                gap: { xs: "1.5rem", md: "4rem" },
-                marginTop: "2rem",
-              }}
-            >
-              {/* Date Box */}
-              <Box
-                sx={{
-                  backgroundColor: "background.paper",
-                  padding: { xs: "1.5rem", md: "1rem" },
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                  display: "flex",
-                  flexDirection: { xs: "row", md: "column" },
-                  alignItems: "center",
-                  justifyContent: { xs: "center", md: "flex-start" },
-                  gap: { xs: 3, md: 0.5 },
-                  border: "2px solid",
-                  borderColor: "secondary.main",
-                  width: { xs: "100%", md: "auto" },
-                  minWidth: { md: "120px" },
-                  flexShrink: 0,
-                }}
-              >
-                <Typography
-                  sx={{
-                    color: "secondary.main",
-                    fontSize: { xs: "1.2rem", md: "1.1rem" },
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Sat
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "secondary.main",
-                    fontSize: { xs: "2.5rem", md: "2rem" },
-                    fontWeight: 800,
-                    lineHeight: 1,
-                  }}
-                >
-                  17
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "secondary.main",
-                    fontSize: { xs: "1.2rem", md: "0.9rem" },
-                    fontWeight: 600,
-                  }}
-                >
-                  June 2025
-                </Typography>
-              </Box>
-
-              {/* Event Details */}
-              <Box
-                sx={{
-                  flex: { md: 1 },
-                  width: "100%",
-                  textAlign: { xs: "center", md: "left" },
-                }}
-              >
-                <Typography
-                  variant="h3"
-                  sx={{
-                    color: "primary.main",
-                    mb: { xs: 1, md: 1 },
-                    fontFamily: '"Playfair Display", serif',
-                    fontSize: { xs: "1.75rem", sm: "2rem", md: "2.5rem" },
-                    fontWeight: 600,
-                  }}
-                >
-                  Winter Whiskey Fest
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "secondary.main",
-                    mb: { xs: 1, md: 1 },
-                    fontSize: { xs: "1.1rem", md: "1.2rem" },
-                    fontWeight: 900,
-                  }}
-                >
-                  Host: Roger
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "primary.main",
-                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                    lineHeight: 1.8,
-                    maxWidth: { xs: "800px", md: "100%" },
-                    margin: { xs: "0 auto", md: 0 },
-                  }}
-                >
-                  Celebrate winter with a variety of whiskey tastings and live
-                  entertainment.
                 </Typography>
               </Box>
             </Box>
@@ -1117,7 +1015,7 @@ function App() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 2,
+              gap: 1,
             }}
           >
             <img
@@ -1128,12 +1026,42 @@ function App() {
                 width: "auto",
               }}
             />
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+              }}
+            >
+              <IconButton
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    color: "secondary.main",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  },
+                }}
+                aria-label="Instagram"
+              >
+                <InstagramIcon sx={{ fontSize: "2rem" }} />
+              </IconButton>
+              <IconButton
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    color: "secondary.main",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  },
+                }}
+                aria-label="Facebook"
+              >
+                <FacebookIcon sx={{ fontSize: "2rem" }} />
+              </IconButton>
+            </Box>
             <Typography
               sx={{
                 color: "white",
                 fontSize: "0.9rem",
                 opacity: 0.8,
-                mt: 2,
               }}
             >
               © 2025 1001 Whiskies. All rights reserved.
