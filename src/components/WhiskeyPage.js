@@ -32,6 +32,17 @@ import threeships from "../assets/whiskeys/threeships.jpg";
 import toor from "../assets/whiskeys/toor.jpg";
 import tullamoredewxo from "../assets/whiskeys/tullamoredewxo.jpg";
 import umiki from "../assets/whiskeys/umiki.jpg";
+import whistlergood from "../assets/whiskeys/whistlergood.jpg";
+import whistlerdoubleoak from "../assets/whiskeys/whistlerdoubleoak.jpg";
+import whistlercalvados from "../assets/whiskeys/whistlercalvados.jpg";
+import cadbol from "../assets/whiskeys/cadbol.jpg";
+import roeandco from "../assets/whiskeys/roeandco.jpg";
+import naked from "../assets/whiskeys/naked.jpg";
+import jacksingle from "../assets/whiskeys/jacksingle.jpg";
+import scallywag from "../assets/whiskeys/scallywag.jpg";
+import mhclassic from "../assets/whiskeys/mhclassic.jpg";
+import benriachthesmokeytwleve from "../assets/whiskeys/benriachthesmokeytwleve.jpg";
+import dimple from "../assets/whiskeys/dimple.jpg";
 
 // Whiskey data with all images
 const whiskeyData = [
@@ -244,6 +255,116 @@ const whiskeyData = [
     rating: 4.1,
     description:
       "A unique Japanese blend finished with pure ocean water, offering a distinctive maritime character alongside gentle malt and fruit notes.",
+  },
+  {
+    id: 22,
+    name: "The Whistler The Good, The Bad & The Smoky",
+    region: "Ireland",
+    type: "Blended Malt",
+    image: whistlergood,
+    rating: 4.1,
+    description:
+      "Campfire smoke with vanilla, toffee, and orchard fruit; finished in peated quarter casks for a smoky, peppery finish.",
+  },
+  {
+    id: 23,
+    name: "The Whistler Double Oak",
+    region: "Ireland",
+    type: "Blended",
+    image: whistlerdoubleoak,
+    rating: 4.0,
+    description:
+      "Rich caramel and vanilla from bourbon casks with nutty sherry complexity; smooth and full-bodied.",
+  },
+  {
+    id: 24,
+    name: "The Whistler Calvados",
+    region: "Ireland",
+    type: "Blended",
+    image: whistlercalvados,
+    rating: 4.2,
+    description:
+      "Apple and orchard fruit aromas with creamy toffee and vanilla; long fruity finish from Calvados casks.",
+  },
+  {
+    id: 25,
+    name: "Glenmorangie 15 Year",
+    region: "Highlands, Scotland",
+    type: "Single Malt",
+    image: cadbol,
+    rating: 4.5,
+    description:
+      "Silky and creamy with orchard fruits, marzipan, honeycomb, and vanilla; warm oak-spiced finish.",
+  },
+  {
+    id: 26,
+    name: "Roe & Co",
+    region: "Ireland",
+    type: "Blended",
+    image: roeandco,
+    rating: 4.1,
+    description:
+      "Elegant, fruity, and creamy with vanilla, caramel, orchard fruit, and soft spice; smooth and versatile.",
+  },
+  {
+    id: 27,
+    name: "Naked Malt",
+    region: "Scotland",
+    type: "Blended Malt",
+    image: naked,
+    rating: 4.0,
+    description:
+      "Rich, fruity, and sherried with dried fruit, raisin, berries, and gentle spice from sherry casks.",
+  },
+  {
+    id: 28,
+    name: "Jack Daniel's Single Barrel",
+    region: "Tennessee, USA",
+    type: "Tennessee Whiskey",
+    image: jacksingle,
+    rating: 4.3,
+    description:
+      "Richer and bolder than Old No.7: caramel, banana bread, vanilla, and toasted oak with warm spice.",
+  },
+  {
+    id: 29,
+    name: "Scallywag",
+    region: "Speyside, Scotland",
+    type: "Blended Malt",
+    image: scallywag,
+    rating: 4.1,
+    description:
+      "Stewed fruits, dark chocolate, warm spice, and vanilla; a sweeter, sherried Speyside profile.",
+  },
+  {
+    id: 30,
+    name: "M&H Classic",
+    region: "Tel Aviv, Israel",
+    type: "Single Malt",
+    image: mhclassic,
+    rating: 4.0,
+    description:
+      "Light and honeyed with vanilla, caramel, peach, and apricot; gentle oak and peppery finish.",
+  },
+  {
+    id: 31,
+    name: "BenRiach The Smoky Twelve",
+    region: "Speyside, Scotland",
+    type: "Single Malt",
+    image: benriachthesmokeytwleve,
+    rating: 4.4,
+    description:
+      "Smoked vanilla, charred orange, dark chocolate, and smoked oak; rich and balanced smoky Speyside.",
+  },
+  {
+    id: 32,
+    name: "Dimple",
+    region: "Scotland",
+    type: "Blended",
+    image: dimple,
+    rating: 3.9,
+    description:
+      "Honeyed malt with orchard fruit, subtle peat, and oak spice; smooth and mellow.",
   },
 ];
 
