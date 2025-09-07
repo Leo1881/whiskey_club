@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/whiskey_club/static/css/main.0d8e94f8.css",
-    "main.js": "/whiskey_club/static/js/main.d95761ed.js",
+    "main.js": "/whiskey_club/static/js/main.894ab862.js",
     "static/js/453.affb779f.chunk.js": "/whiskey_club/static/js/453.affb779f.chunk.js",
     "static/media/contactimage.webp": "/whiskey_club/static/media/contactimage.0cd48c5a8a85965adc51.webp",
     "static/media/about_us.webp": "/whiskey_club/static/media/about_us.af69f045199b47aa98e5.webp",
@@ -13,12 +13,18 @@
     "static/media/naked.jpg": "/whiskey_club/static/media/naked.25685f66354735c6ad27.jpg",
     "static/media/whistlercalvados.jpg": "/whiskey_club/static/media/whistlercalvados.b8f7cf8647f3ce81ed92.jpg",
     "static/media/scallywag.jpg": "/whiskey_club/static/media/scallywag.7252cac9014c9b80362b.jpg",
+    "static/media/smokehead.jpg": "/whiskey_club/static/media/smokehead.869d3d8cedc568127ef1.jpg",
     "static/media/mhclassic.jpg": "/whiskey_club/static/media/mhclassic.cba88ad88fcef1c30a35.jpg",
     "static/media/cadbol.jpg": "/whiskey_club/static/media/cadbol.f928080495cf69650791.jpg",
     "static/media/benriachthesmokeytwleve.jpg": "/whiskey_club/static/media/benriachthesmokeytwleve.810a9c5d60a277daee7b.jpg",
     "static/media/dimple.jpg": "/whiskey_club/static/media/dimple.b62b29e7e3cd1a8d16c3.jpg",
+    "static/media/taliskersingle.jpg": "/whiskey_club/static/media/taliskersingle.163ee635a00047d1dddb.jpg",
     "static/media/whistlergood.jpg": "/whiskey_club/static/media/whistlergood.b21f85cd27bb997ac564.jpg",
     "static/media/jacksingle.jpg": "/whiskey_club/static/media/jacksingle.a323ffae761f8efc5725.jpg",
+    "static/media/laphroaigselect.jpg": "/whiskey_club/static/media/laphroaigselect.88f011dc2778c331054e.jpg",
+    "static/media/kavalan.jpg": "/whiskey_club/static/media/kavalan.972629e69791884c0750.jpg",
+    "static/media/amrut.jpg": "/whiskey_club/static/media/amrut.482b456d732b1bcb6df1.jpg",
+    "static/media/writerstears.jpg": "/whiskey_club/static/media/writerstears.1bc38f6b4696d2f60fcc.jpg",
     "static/media/tamnavulin.jpg": "/whiskey_club/static/media/tamnavulin.7dae6c03ddc596778781.jpg",
     "static/media/belvenie12.jpg": "/whiskey_club/static/media/belvenie12.c370ab4b1d9bbdcc8013.jpg",
     "static/media/lochlomond.jpg": "/whiskey_club/static/media/lochlomond.16c5d2cc839c240dd84f.jpg",
@@ -43,11 +49,11 @@
     "static/media/baines.jpg": "/whiskey_club/static/media/baines.41b42da1b03a6b3ffb96.jpg",
     "index.html": "/whiskey_club/index.html",
     "main.0d8e94f8.css.map": "/whiskey_club/static/css/main.0d8e94f8.css.map",
-    "main.d95761ed.js.map": "/whiskey_club/static/js/main.d95761ed.js.map",
+    "main.894ab862.js.map": "/whiskey_club/static/js/main.894ab862.js.map",
     "453.affb779f.chunk.js.map": "/whiskey_club/static/js/453.affb779f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d8e94f8.css",
-    "static/js/main.d95761ed.js"
+    "static/js/main.894ab862.js"
   ]
 }
