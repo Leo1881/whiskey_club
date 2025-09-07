@@ -53,6 +53,12 @@ import taliskersingle from "../assets/whiskeys/taliskersingle.jpg";
 import kavalan from "../assets/whiskeys/kavalan.jpg";
 import amrut from "../assets/whiskeys/amrut.jpg";
 import smokehead from "../assets/whiskeys/smokehead.jpg";
+import ancnoc from "../assets/whiskeys/ancnoc.jpg";
+import glenscoriadouble from "../assets/whiskeys/glenscoriadouble.jpg";
+import crownroyal from "../assets/whiskeys/crownroyal.jpg";
+import compass from "../assets/whiskeys/compass.jpg";
+import indri from "../assets/whiskeys/indri.jpg";
+import mosaic from "../assets/whiskeys/mosaic.jpg";
 
 // Whiskey data with all images
 const whiskeyData = [
@@ -435,6 +441,66 @@ const whiskeyData = [
     rating: 4.1,
     description:
       "Intensely peaty and rich—immense smoke with sea salt and spice, ginger, vanilla, burnt earth and stout aromas; peppery, smoky, bold finish.",
+  },
+  {
+    id: 39,
+    name: "anCnoc 12 Year",
+    region: "Scotland",
+    type: "Single Malt",
+    image: ancnoc,
+    rating: 4.0,
+    description:
+      "Fresh and lightly sweet with honey, vanilla, citrus cream, heather and gentle baking spices; medium finish with poached pear, apple, white chocolate.",
+  },
+  {
+    id: 40,
+    name: "Glen Scotia Double Cask",
+    region: "Scotland",
+    type: "Single Malt",
+    image: glenscoriadouble,
+    rating: 4.1,
+    description:
+      "Matured in bourbon casks then finished 12 months in PX sherry, offering spicy fruit, toffee, fudge, vanilla, maritime sea salt spray, apple and pear complexity.",
+  },
+  {
+    id: 41,
+    name: "Crown Royal (Deluxe)",
+    region: "Canada",
+    type: "Blended",
+    image: crownroyal,
+    rating: 3.8,
+    description:
+      "Smooth and creamy—vanilla, oak and fruit aromas with a softly lingering finish; the classic blended Canadian whisky since 1939.",
+  },
+  {
+    id: 42,
+    name: "Compass Box (general range)",
+    region: "Scotland",
+    type: "Blended",
+    image: compass,
+    rating: 4.2,
+    description:
+      "Innovative blends crafted by John Glaser since 2000—ranging from the smoky Peat Monster to honeyed Hedonism, blending artistry and bold flavour exploration.",
+  },
+  {
+    id: 43,
+    name: "Indri Dru",
+    region: "India",
+    type: "Single Malt",
+    image: indri,
+    rating: 4.3,
+    description:
+      "Award-winning Indian single malt (High ABV ~57%) with rich oak, dried fruit, vanilla, spice and tropical vibrancy. Named Best World Whiskey at Miami Global Spirit Awards 2025.",
+  },
+  {
+    id: 44,
+    name: "The Whistler Mosaic (Marsala Cask)",
+    region: "Ireland",
+    type: "Single Grain",
+    image: mosaic,
+    rating: 4.1,
+    description:
+      "A small-batch single grain (95% maize) matured in bourbon then Marsala casks; huge citrus burst—orange, clementine, lime—plus vanilla, chocolate, toffee, hazelnut and oak.",
   },
 ];
 
