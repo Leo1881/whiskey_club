@@ -47,6 +47,12 @@ import scallywag from "../assets/whiskeys/scallywag.jpg";
 import mhclassic from "../assets/whiskeys/mhclassic.jpg";
 import benriachthesmokeytwleve from "../assets/whiskeys/benriachthesmokeytwleve.jpg";
 import dimple from "../assets/whiskeys/dimple.jpg";
+import writerstears from "../assets/whiskeys/writerstears.jpg";
+import laphroaigselect from "../assets/whiskeys/laphroaigselect.jpg";
+import taliskersingle from "../assets/whiskeys/taliskersingle.jpg";
+import kavalan from "../assets/whiskeys/kavalan.jpg";
+import amrut from "../assets/whiskeys/amrut.jpg";
+import smokehead from "../assets/whiskeys/smokehead.jpg";
 
 // Whiskey data with all images
 const whiskeyData = [
@@ -323,7 +329,7 @@ const whiskeyData = [
   {
     id: 28,
     name: "Jack Daniel's Single Barrel",
-    region: "Tennessee, USA",
+    region: "USA",
     type: "Tennessee Whiskey",
     image: jacksingle,
     rating: 4.3,
@@ -333,7 +339,7 @@ const whiskeyData = [
   {
     id: 29,
     name: "Scallywag",
-    region: "Speyside, Scotland",
+    region: "Scotland",
     type: "Blended",
     image: scallywag,
     rating: 4.1,
@@ -343,7 +349,7 @@ const whiskeyData = [
   {
     id: 30,
     name: "M&H Classic",
-    region: "Tel Aviv, Israel",
+    region: "Israel",
     type: "Single Malt",
     image: mhclassic,
     rating: 4.0,
@@ -353,7 +359,7 @@ const whiskeyData = [
   {
     id: 31,
     name: "BenRiach The Smoky Twelve",
-    region: "Speyside, Scotland",
+    region: "Scotland",
     type: "Single Malt",
     image: benriachthesmokeytwleve,
     rating: 4.4,
@@ -369,6 +375,66 @@ const whiskeyData = [
     rating: 3.9,
     description:
       "Honeyed malt with orchard fruit, subtle peat, and oak spice; smooth and mellow.",
+  },
+  {
+    id: 33,
+    name: "Writer's Tears",
+    region: "Ireland",
+    type: "Blended",
+    image: writerstears,
+    rating: 4.2,
+    description:
+      "Elegant and sweet with malt-forward notes, soft hints of vanilla, oak, orchard fruit and dark chocolate; triple distilled in charred bourbon casks.",
+  },
+  {
+    id: 34,
+    name: "Laphroaig Select",
+    region: "Scotland",
+    type: "Single Malt",
+    image: laphroaigselect,
+    rating: 4.0,
+    description:
+      "Punchy medicinal peat with smoky oak and surprising sweetness. Notes of chocolate milk, sherbet lemon, gentle wood smoke and spicy oak.",
+  },
+  {
+    id: 35,
+    name: "Talisker Single Malt",
+    region: "Scotland",
+    type: "Single Malt",
+    image: taliskersingle,
+    rating: 4.3,
+    description:
+      "Smoky, maritime and bold—peat smoke with citrus and sea salt aromas, peppery spices and a long peppery finish, capturing the wild Isle of Skye.",
+  },
+  {
+    id: 36,
+    name: "Kavalan (Classic)",
+    region: "Taiwan",
+    type: "Single Malt",
+    image: kavalan,
+    rating: 4.1,
+    description:
+      "Smooth, non-peated Taiwanese single malt—dried fruit, oak, malt and subtle chocolate spices on the nose; easy-drinking, clean and elegant.",
+  },
+  {
+    id: 37,
+    name: "Amrut (Indian Single Malt)",
+    region: "India",
+    type: "Single Malt",
+    image: amrut,
+    rating: 4.2,
+    description:
+      "India's pioneering single malt—powerful oak, milk chocolate, almonds, apricots and spices on the nose; light, fruity palate with barley and coconut flavors.",
+  },
+  {
+    id: 38,
+    name: "Smokehead",
+    region: "Scotland",
+    type: "Single Malt",
+    image: smokehead,
+    rating: 4.1,
+    description:
+      "Intensely peaty and rich—immense smoke with sea salt and spice, ginger, vanilla, burnt earth and stout aromas; peppery, smoky, bold finish.",
   },
 ];
 

@@ -87,7 +87,7 @@ function NavBar({
             >
               Events
             </Button>
-            <Button onClick={handleWhiskeyClick}>Whiskies</Button>
+            <Button onClick={handleWhiskeyClick}>Whisky's</Button>
             <Button onClick={handleMembersClick}>Members</Button>
             <Button onClick={handleGalleryClick}>Gallery</Button>
             <Button
