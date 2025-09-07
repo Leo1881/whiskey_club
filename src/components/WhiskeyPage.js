@@ -59,6 +59,14 @@ import crownroyal from "../assets/whiskeys/crownroyal.jpg";
 import compass from "../assets/whiskeys/compass.jpg";
 import indri from "../assets/whiskeys/indri.jpg";
 import mosaic from "../assets/whiskeys/mosaic.jpg";
+import oloroso from "../assets/whiskeys/oloroso.jpg";
+import px from "../assets/whiskeys/px.jpg";
+import dewars from "../assets/whiskeys/dewars.jpg";
+import chivas15 from "../assets/whiskeys/chivas15.jpg";
+import lasanta from "../assets/whiskeys/lasanta.jpg";
+import triple from "../assets/whiskeys/triple.jpg";
+import signet from "../assets/whiskeys/signet.jpg";
+import icecream from "../assets/whiskeys/icecream.jpg";
 
 // Whiskey data with all images
 const whiskeyData = [
@@ -501,6 +509,86 @@ const whiskeyData = [
     rating: 4.1,
     description:
       "A small-batch single grain (95% maize) matured in bourbon then Marsala casks; huge citrus burst—orange, clementine, lime—plus vanilla, chocolate, toffee, hazelnut and oak.",
+  },
+  {
+    id: 45,
+    name: "The Whistler Oloroso",
+    region: "Ireland",
+    type: "Blended",
+    image: oloroso,
+    rating: 4.2,
+    description:
+      "Triple-distilled blend aged in bourbon then Oloroso sherry casks—nose of sherbet lemon, nougat, raspberry; palate of bergamot, nougat, coconut, banana; sweet, lingering finish.",
+  },
+  {
+    id: 46,
+    name: "The Whistler PX I Love You",
+    region: "Ireland",
+    type: "Blended",
+    image: px,
+    rating: 4.1,
+    description:
+      "Rich blend with Pedro Ximénez cask finish—expected to deliver deep dried fruit, raisin, caramel, dark chocolate, and a sweet, sherry-driven finish.",
+  },
+  {
+    id: 47,
+    name: "Dewar's 15 Year",
+    region: "Scotland",
+    type: "Blended",
+    image: dewars,
+    rating: 4.0,
+    description:
+      "Smooth and complex blend—with honey, toffee, dried fruit, floral and spicy oak; well-balanced across sherry and bourbon barrels; often seen as good value and approachable.",
+  },
+  {
+    id: 48,
+    name: "Chivas Regal 15 Year (XV)",
+    region: "Scotland",
+    type: "Blended",
+    image: chivas15,
+    rating: 4.1,
+    description:
+      "Aged 15 years, finished in Grande Champagne cognac casks—luxuriously fruity and sweet; aromas of red apple, orange marmalade, honey, sultanas; rich, celebratory profile.",
+  },
+  {
+    id: 49,
+    name: "Glenmorangie Lasanta",
+    region: "Highlands, Scotland",
+    type: "Single Malt",
+    image: lasanta,
+    rating: 4.2,
+    description:
+      "12-year Highland malt matured in bourbon then sherry casks—nose of plum, raisin, baking spice, milk chocolate; palate of raspberry coulis, dried fruits, orange marmalade; silky, long finish.",
+  },
+  {
+    id: 50,
+    name: "Glenmorangie Triple Reserve (Quinta Ruban / Nectar d'Or variant)",
+    region: "Highlands, Scotland",
+    type: "Single Malt",
+    image: triple,
+    rating: 4.2,
+    description:
+      "Rich extra-matured malt finished in three cask types (e.g. bourbon, port, sweet wine)—layers of citrus, vanilla, chocolate, orchard fruit; velvety, dessert-like sweetness.",
+  },
+  {
+    id: 51,
+    name: "Glenmorangie Signet",
+    region: "Highlands, Scotland",
+    type: "Single Malt",
+    image: signet,
+    rating: 4.4,
+    description:
+      "Luxurious creation using roasted chocolate-malts and vintage spirit—intensely smooth, chocolate-rich, spicy, coffee, and dark fruit characteristics; full-bodied and complex.",
+  },
+  {
+    id: 52,
+    name: "Glenmorangie A Tale of Ice Cream",
+    region: "Highlands, Scotland",
+    type: "Single Malt",
+    image: icecream,
+    rating: 4.3,
+    description:
+      "Decadent, creamy malt aged in bourbon and high-vanillin casks; notes of peach melba, lemon sorbet, coconut flakes, marzipan, honey, fudge; thick, dessert-like with toffee-apple finish.",
   },
 ];
 
