@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/whiskey_club/static/css/main.0d8e94f8.css",
-    "main.js": "/whiskey_club/static/js/main.c15e8161.js",
+    "main.js": "/whiskey_club/static/js/main.dfe96c87.js",
     "static/js/453.affb779f.chunk.js": "/whiskey_club/static/js/453.affb779f.chunk.js",
     "static/media/contactimage.webp": "/whiskey_club/static/media/contactimage.0cd48c5a8a85965adc51.webp",
     "static/media/about_us.webp": "/whiskey_club/static/media/about_us.af69f045199b47aa98e5.webp",
@@ -63,11 +63,11 @@
     "static/media/compass.jpg": "/whiskey_club/static/media/compass.1019204f8f372847563b.jpg",
     "index.html": "/whiskey_club/index.html",
     "main.0d8e94f8.css.map": "/whiskey_club/static/css/main.0d8e94f8.css.map",
-    "main.c15e8161.js.map": "/whiskey_club/static/js/main.c15e8161.js.map",
+    "main.dfe96c87.js.map": "/whiskey_club/static/js/main.dfe96c87.js.map",
     "453.affb779f.chunk.js.map": "/whiskey_club/static/js/453.affb779f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d8e94f8.css",
-    "static/js/main.c15e8161.js"
+    "static/js/main.dfe96c87.js"
   ]
 }
