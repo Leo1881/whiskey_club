@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/whiskey_club/static/css/main.0d8e94f8.css",
-    "main.js": "/whiskey_club/static/js/main.d61dfa34.js",
+    "main.js": "/whiskey_club/static/js/main.0248ad5b.js",
     "static/js/453.affb779f.chunk.js": "/whiskey_club/static/js/453.affb779f.chunk.js",
     "static/media/contactimage.webp": "/whiskey_club/static/media/contactimage.0cd48c5a8a85965adc51.webp",
+    "static/media/gaba.png": "/whiskey_club/static/media/gaba.4d22fa011e72c76a589f.png",
     "static/media/about_us.webp": "/whiskey_club/static/media/about_us.af69f045199b47aa98e5.webp",
+    "static/media/lee.png": "/whiskey_club/static/media/lee.bf4d6de6a58d99b459b3.png",
     "static/media/logodark.png": "/whiskey_club/static/media/logodark.ff272f7e06e7fed45834.png",
     "static/media/logolight.png": "/whiskey_club/static/media/logolight.be426a879d6ca05ac144.png",
     "static/media/hero_image.webp": "/whiskey_club/static/media/hero_image.525016868e07c0aa7088.webp",
     "static/media/event1.webp": "/whiskey_club/static/media/event1.54401c8b5f431ca26324.webp",
+    "static/media/brandon.png": "/whiskey_club/static/media/brandon.93ac0fdd08d7c03826bf.png",
+    "static/media/robin.jpeg": "/whiskey_club/static/media/robin.e8c1683fccc0c200ff1c.jpeg",
     "static/media/lasanta.jpg": "/whiskey_club/static/media/lasanta.31ef52da540e1a6ccb69.jpg",
     "static/media/glenfiddich15.jpg": "/whiskey_club/static/media/glenfiddich15.dd01e3ccb3fbbfff740d.jpg",
     "static/media/icecream.jpg": "/whiskey_club/static/media/icecream.6324d77365830c987d34.jpg",
@@ -63,11 +67,11 @@
     "static/media/compass.jpg": "/whiskey_club/static/media/compass.1019204f8f372847563b.jpg",
     "index.html": "/whiskey_club/index.html",
     "main.0d8e94f8.css.map": "/whiskey_club/static/css/main.0d8e94f8.css.map",
-    "main.d61dfa34.js.map": "/whiskey_club/static/js/main.d61dfa34.js.map",
+    "main.0248ad5b.js.map": "/whiskey_club/static/js/main.0248ad5b.js.map",
     "453.affb779f.chunk.js.map": "/whiskey_club/static/js/453.affb779f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d8e94f8.css",
-    "static/js/main.d61dfa34.js"
+    "static/js/main.0248ad5b.js"
   ]
 }
