@@ -12,6 +12,10 @@ import CloseIcon from "@mui/icons-material/Close";
 
 // Import member image
 import memberImage from "../assets/members/faadiel.jpeg";
+import robin from "../assets/members/robin.jpeg";
+import lee from "../assets/members/lee.png";
+import brandon from "../assets/members/brandon.png";
+import gaba from "../assets/members/gaba.png";
 
 // Sample member data - replace with actual member data and images
 const memberData = [
@@ -20,7 +24,7 @@ const memberData = [
     name: "Brandon VD Haer",
     role: "Founding Member",
     type: "Whiskey Connoisseur",
-    image: memberImage,
+    image: brandon,
     rating: 4.8,
     description:
       "A passionate whiskey enthusiast with over 15 years of experience in whiskey tasting and collection. Specializes in rare Scottish single malts and has visited over 30 distilleries worldwide.",
@@ -30,7 +34,7 @@ const memberData = [
     name: "Robin Goodall",
     role: "Master Taster",
     type: "Certified Sommelier",
-    image: memberImage,
+    image: robin,
     rating: 4.9,
     description:
       "With a background in wine tasting, Sarah brings a refined palate and unique perspective to whiskey appreciation. Known for her exceptional ability to identify subtle flavor notes and regional characteristics.",
@@ -77,10 +81,10 @@ const memberData = [
   },
   {
     id: 7,
-    name: "Leaveil Johnson",
+    name: "Lee Johnson",
     role: "Japanese Whisky Expert",
     type: "International Judge",
-    image: memberImage,
+    image: lee,
     rating: 4.8,
     description:
       "An international whisky judge with expertise in Japanese whisky production. Regular contributor to whisky magazines and has judged numerous international competitions.",
@@ -90,7 +94,7 @@ const memberData = [
     name: "Gaba Majola",
     role: "Scotch Specialist",
     type: "Master Distiller",
-    image: memberImage,
+    image: gaba,
     rating: 4.9,
     description:
       "Former master distiller with 25 years of experience in Scottish distilleries. Expert in single malt production and maturation processes.",
