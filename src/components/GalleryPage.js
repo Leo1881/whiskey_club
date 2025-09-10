@@ -36,17 +36,22 @@ import rogers1 from "../assets/events/rogers-sitting-july-2025/img_17.jpeg";
 import rogers2 from "../assets/events/rogers-sitting-july-2025/img_18.jpeg";
 import rogers3 from "../assets/events/rogers-sitting-july-2025/img_19.jpeg";
 
-//import dullstroomCover from "../assets/events/dullstroom-may-2025/cover.jpg";
-//import dullstroom1 from "../assets/events/dullstroom-may-2025/image1.jpg";
-//import dullstroom2 from "../assets/events/dullstroom-may-2025/image2.jpg";
-//import dullstroom3 from "../assets/events/dullstroom-may-2025/image3.jpg";
-//import dullstroom4 from "../assets/events/dullstroom-may-2025/image4.jpg";
+import dullstroomCover from "../assets/events/dullstroom-may-2025/img_20.jpeg";
+import dullstroom1 from "../assets/events/dullstroom-may-2025/img_20.jpeg";
+import dullstroom2 from "../assets/events/dullstroom-may-2025/img_21.jpeg";
+import dullstroom3 from "../assets/events/dullstroom-may-2025/img_22.jpeg";
+import dullstroom4 from "../assets/events/dullstroom-may-2025/img_23.jpeg";
+import dullstroom5 from "../assets/events/dullstroom-may-2025/img_24.jpeg";
+import dullstroom6 from "../assets/events/dullstroom-may-2025/img_25.jpeg";
+import dullstroom7 from "../assets/events/dullstroom-may-2025/img_26.jpeg";
+import dullstroom8 from "../assets/events/dullstroom-may-2025/img_27.jpeg";
+import dullstroom9 from "../assets/events/dullstroom-may-2025/img_28.jpeg";
+import dullstroom10 from "../assets/events/dullstroom-may-2025/img_29.jpeg";
 
-//import brandonsCover from "../assets/events/brandons-sitting-april-2025/cover.jpg";
-//import brandons1 from "../assets/events/brandons-sitting-april-2025/image1.jpg";
-//import brandons2 from "../assets/events/brandons-sitting-april-2025/image2.jpg";
-//import brandons3 from "../assets/events/brandons-sitting-april-2025/image3.jpg";
-//import brandons4 from "../assets/events/brandons-sitting-april-2025/image4.jpg";
+import brandonsCover from "../assets/events/brandons-sitting-april-2025/img_30.jpeg";
+import brandons1 from "../assets/events/brandons-sitting-april-2025/img_30.jpeg";
+import brandons2 from "../assets/events/brandons-sitting-april-2025/img_31.jpeg";
+import brandons3 from "../assets/events/brandons-sitting-april-2025/img_32.jpeg";
 
 //import johnsCover from "../assets/events/johns-sitting-march-2025/cover.jpg";
 //import johns1 from "../assets/events/johns-sitting-march-2025/image1.jpg";
@@ -132,32 +137,37 @@ const eventData = [
       { id: 3, src: rogers3, caption: "Event setup" },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: "Dullstroom",
-  //   date: "23rd May 2025",
-  //   coverImage: dullstroomCover,
-  //   description: "Visit to Wild About Whiskey",
-  //   images: [
-  //     { id: 1, src: dullstroom1, caption: "Wild About Whiskey visit" },
-  //     { id: 2, src: dullstroom2, caption: "Members enjoying" },
-  //     { id: 3, src: dullstroom3, caption: "Event setup" },
-  //     { id: 4, src: dullstroom4, caption: "Dullstroom experience" },
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   title: "Brandon's Sitting",
-  //   date: "26th April 2025",
-  //   coverImage: brandonsCover,
-  //   description: "The Singles",
-  //   images: [
-  //     { id: 1, src: brandons1, caption: "Single malt tasting" },
-  //     { id: 2, src: brandons2, caption: "Group discussion" },
-  //     { id: 3, src: brandons3, caption: "Single malt collection" },
-  //     { id: 4, src: brandons4, caption: "Event highlights" },
-  //   ],
-  // },
+  {
+    id: 4,
+    title: "Dullstroom",
+    date: "23rd May 2025",
+    coverImage: dullstroomCover,
+    description: "Visit to Wild About Whiskey",
+    images: [
+      { id: 1, src: dullstroom1, caption: "Wild About Whiskey visit" },
+      { id: 2, src: dullstroom2, caption: "Members enjoying" },
+      { id: 3, src: dullstroom3, caption: "Event setup" },
+      { id: 4, src: dullstroom4, caption: "Dullstroom experience" },
+      { id: 5, src: dullstroom5, caption: "Dullstroom experience" },
+      { id: 6, src: dullstroom6, caption: "Dullstroom experience" },
+      { id: 7, src: dullstroom7, caption: "Dullstroom experience" },
+      { id: 8, src: dullstroom8, caption: "Dullstroom experience" },
+      { id: 9, src: dullstroom9, caption: "Dullstroom experience" },
+      { id: 10, src: dullstroom10, caption: "Dullstroom experience" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Brandon's Sitting",
+    date: "26th April 2025",
+    coverImage: brandonsCover,
+    description: "The Singles",
+    images: [
+      { id: 1, src: brandons1, caption: "Single malt tasting" },
+      { id: 2, src: brandons2, caption: "Group discussion" },
+      { id: 3, src: brandons3, caption: "Single malt collection" },
+    ],
+  },
   // {
   //   id: 6,
   //   title: "John's Sitting",
