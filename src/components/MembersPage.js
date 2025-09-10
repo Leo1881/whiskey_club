@@ -14,14 +14,16 @@ import CloseIcon from "@mui/icons-material/Close";
 import memberImage from "../assets/members/faadiel.jpeg";
 import robin from "../assets/members/robin.jpeg";
 import lee from "../assets/members/lee.png";
-import brandon from "../assets/members/brandon.png";
+import brandon from "../assets/members/brandon.jpeg";
 import gaba from "../assets/members/gaba.png";
+import wayne from "../assets/members/wayne.jpeg";
+import mark from "../assets/members/mark.jpeg";
 
 // Sample member data - replace with actual member data and images
 const memberData = [
   {
     id: 1,
-    name: "Brandon VD Haer",
+    name: "Brandon",
     role: "Founding Member",
     type: "Whiskey Connoisseur",
     image: brandon,
@@ -31,7 +33,7 @@ const memberData = [
   },
   {
     id: 2,
-    name: "Robin Goodall",
+    name: "Robin",
     role: "Master Taster",
     type: "Certified Sommelier",
     image: robin,
@@ -41,7 +43,7 @@ const memberData = [
   },
   {
     id: 3,
-    name: "John Williams",
+    name: "John",
     role: "Events Coordinator",
     type: "Mixologist",
     image: memberImage,
@@ -51,7 +53,7 @@ const memberData = [
   },
   {
     id: 4,
-    name: "Roger Niken",
+    name: "Roger",
     role: "Education Director",
     type: "Whiskey Historian",
     image: memberImage,
@@ -61,7 +63,7 @@ const memberData = [
   },
   {
     id: 5,
-    name: "Shaun Beckett",
+    name: "Shaun",
     role: "Irish Whiskey Specialist",
     type: "Brand Ambassador",
     image: memberImage,
@@ -71,17 +73,7 @@ const memberData = [
   },
   {
     id: 6,
-    name: "Bradley Jacobs",
-    role: "Tasting Director",
-    type: "Flavor Expert",
-    image: memberImage,
-    rating: 4.9,
-    description:
-      "A certified flavor expert with a background in culinary arts. Specializes in identifying complex flavor profiles and creating unique whiskey and food pairings.",
-  },
-  {
-    id: 7,
-    name: "Lee Johnson",
+    name: "Lee",
     role: "Japanese Whisky Expert",
     type: "International Judge",
     image: lee,
@@ -90,8 +82,8 @@ const memberData = [
       "An international whisky judge with expertise in Japanese whisky production. Regular contributor to whisky magazines and has judged numerous international competitions.",
   },
   {
-    id: 8,
-    name: "Gaba Majola",
+    id: 7,
+    name: "Gaba",
     role: "Scotch Specialist",
     type: "Master Distiller",
     image: gaba,
@@ -100,8 +92,8 @@ const memberData = [
       "Former master distiller with 25 years of experience in Scottish distilleries. Expert in single malt production and maturation processes.",
   },
   {
-    id: 9,
-    name: "Fabian Waterson",
+    id: 8,
+    name: "Fabian",
     role: "Social Media Director",
     type: "Content Creator",
     image: memberImage,
@@ -110,17 +102,17 @@ const memberData = [
       "A whiskey enthusiast who combines her passion for spirits with digital storytelling. Creates engaging content about whiskey culture and tasting experiences.",
   },
   {
-    id: 10,
-    name: "Mark Rasseau",
+    id: 9,
+    name: "Mark",
     role: "Bourbon Expert",
     type: "Kentucky Native",
-    image: memberImage,
+    image: mark,
     rating: 4.7,
     description:
       "Born and raised in Kentucky's bourbon country, Thomas brings authentic insights into American whiskey traditions and craft distilling methods.",
   },
   {
-    id: 11,
+    id: 10,
     name: "Kurt",
     role: "Community Manager",
     type: "Event Specialist",
@@ -130,11 +122,11 @@ const memberData = [
       "Coordinates member activities and special events. Known for creating engaging whiskey tasting experiences and fostering community connections.",
   },
   {
-    id: 12,
-    name: "Wayne Cannel",
+    id: 11,
+    name: "Wayne",
     role: "Collection Curator",
     type: "Rare Whiskey Specialist",
-    image: memberImage,
+    image: wayne,
     rating: 4.8,
     description:
       "Manages our rare whiskey collection and relationships with distilleries. Expert in identifying and acquiring unique and limited-edition releases.",

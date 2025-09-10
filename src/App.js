@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Typography, Box, IconButton } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -146,6 +146,44 @@ function App() {
   const [showWhiskeyPage, setShowWhiskeyPage] = useState(false);
   const [showMembersPage, setShowMembersPage] = useState(false);
   const [showGalleryPage, setShowGalleryPage] = useState(false);
+  const [isImageVisible, setIsImageVisible] = useState(false);
+  const [isContactImageVisible, setIsContactImageVisible] = useState(false);
+  const imageRef = useRef(null);
+  const contactImageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageRef.current) {
+            setIsImageVisible(true);
+          } else if (entry.target === contactImageRef.current) {
+            setIsContactImageVisible(true);
+          }
+        }
+      },
+      {
+        threshold: 0.3, // Trigger when 30% of the element is visible
+        rootMargin: "0px 0px -100px 0px", // Start animation slightly before element is fully visible
+      }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+    if (contactImageRef.current) {
+      observer.observe(contactImageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+      if (contactImageRef.current) {
+        observer.unobserve(contactImageRef.current);
+      }
+    };
+  }, []);
 
   const scrollToSection = (sectionId) => {
     setShowWhiskeyPage(false);
@@ -401,6 +439,7 @@ function App() {
             }}
           >
             <Box
+              ref={imageRef}
               sx={{
                 width: "100%",
                 height: { xs: "300px", sm: "400px", md: "600px" },
@@ -409,6 +448,11 @@ function App() {
                 backgroundImage: `url(${aboutUsImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                transform: isImageVisible
+                  ? "translateX(0)"
+                  : "translateX(100%)",
+                opacity: isImageVisible ? 1 : 0,
+                transition: "transform 1s ease-out, opacity 1s ease-out",
               }}
             />
           </Box>
@@ -985,6 +1029,7 @@ function App() {
             }}
           >
             <Box
+              ref={contactImageRef}
               sx={{
                 width: "100%",
                 height: { xs: "300px", sm: "400px", md: "600px" },
@@ -993,6 +1038,11 @@ function App() {
                 backgroundImage: `url(${contactImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                transform: isContactImageVisible
+                  ? "translateX(0)"
+                  : "translateX(100%)",
+                opacity: isContactImageVisible ? 1 : 0,
+                transition: "transform 1s ease-out, opacity 1s ease-out",
               }}
             />
           </Box>
