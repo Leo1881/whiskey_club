@@ -53,29 +53,46 @@ import brandons1 from "../assets/events/brandons-sitting-april-2025/img_30.jpeg"
 import brandons2 from "../assets/events/brandons-sitting-april-2025/img_31.jpeg";
 import brandons3 from "../assets/events/brandons-sitting-april-2025/img_32.jpeg";
 
-//import johnsCover from "../assets/events/johns-sitting-march-2025/cover.jpg";
-//import johns1 from "../assets/events/johns-sitting-march-2025/image1.jpg";
-//import johns2 from "../assets/events/johns-sitting-march-2025/image2.jpg";
-//import johns3 from "../assets/events/johns-sitting-march-2025/image3.jpg";
-//import johns4 from "../assets/events/johns-sitting-march-2025/image4.jpg";
+import johnsCover from "../assets/events/johns-sitting-march-2025/img_38.jpeg";
+import johns1 from "../assets/events/johns-sitting-march-2025/img_33.jpeg";
+import johns2 from "../assets/events/johns-sitting-march-2025/img_34.jpeg";
+import johns3 from "../assets/events/johns-sitting-march-2025/img_35.jpeg";
+import johns4 from "../assets/events/johns-sitting-march-2025/img_36.jpeg";
+import johns5 from "../assets/events/johns-sitting-march-2025/img_37.jpeg";
+import johns6 from "../assets/events/johns-sitting-march-2025/img_38.jpeg";
 
-//import gabasCover from "../assets/events/gabas-sitting-december-2024/cover.jpg";
-//import gabas1 from "../assets/events/gabas-sitting-december-2024/image1.jpg";
-//import gabas2 from "../assets/events/gabas-sitting-december-2024/image2.jpg";
-//import gabas3 from "../assets/events/gabas-sitting-december-2024/image3.jpg";
-//import gabas4 from "../assets/events/gabas-sitting-december-2024/image4.jpg";
+import gabasCover from "../assets/events/gabas-sitting-december-2024/img_44.jpeg";
+import gabas1 from "../assets/events/gabas-sitting-december-2024/img_39.jpeg";
+import gabas2 from "../assets/events/gabas-sitting-december-2024/img_40.jpeg";
+import gabas3 from "../assets/events/gabas-sitting-december-2024/img_41.jpeg";
+import gabas4 from "../assets/events/gabas-sitting-december-2024/img_42.jpeg";
+import gabas5 from "../assets/events/gabas-sitting-december-2024/img_43.jpeg";
+import gabas6 from "../assets/events/gabas-sitting-december-2024/img_44.jpeg";
 
-//import kurtsOctCover from "../assets/events/kurts-sitting-october-2024/cover.jpg";
-//import kurtsOct1 from "../assets/events/kurts-sitting-october-2024/image1.jpg";
-//import kurtsOct2 from "../assets/events/kurts-sitting-october-2024/image2.jpg";
-//import kurtsOct3 from "../assets/events/kurts-sitting-october-2024/image3.jpg";
-//import kurtsOct4 from "../assets/events/kurts-sitting-october-2024/image4.jpg";
+import kurtsOctCover from "../assets/events/kurts-sitting-october-2024/img_48.jpeg";
+import kurtsOct1 from "../assets/events/kurts-sitting-october-2024/img_45.jpeg";
+import kurtsOct2 from "../assets/events/kurts-sitting-october-2024/img_46.jpeg";
+import kurtsOct3 from "../assets/events/kurts-sitting-october-2024/img_47.jpeg";
+import kurtsOct4 from "../assets/events/kurts-sitting-october-2024/img_48.jpeg";
+import kurtsOct5 from "../assets/events/kurts-sitting-october-2024/img_49.jpeg";
+import kurtsOct6 from "../assets/events/kurts-sitting-october-2024/img_50.jpeg";
+import kurtsOct7 from "../assets/events/kurts-sitting-october-2024/img_51.jpeg";
+import kurtsOct8 from "../assets/events/kurts-sitting-october-2024/img_52.jpeg";
 
-//import shaunsCover from "../assets/events/shauns-sitting-june-2024/cover.jpg";
-//import shauns1 from "../assets/events/shauns-sitting-june-2024/image1.jpg";
-//import shauns2 from "../assets/events/shauns-sitting-june-2024/image2.jpg";
-//import shauns3 from "../assets/events/shauns-sitting-june-2024/image3.jpg";
-//import shauns4 from "../assets/events/shauns-sitting-june-2024/image4.jpg";
+import bradleysCover from "../assets/events/bradleys-sitting-2024/img_57.jpeg";
+import bradleys1 from "../assets/events/bradleys-sitting-2024/img_53.jpeg";
+import bradleys2 from "../assets/events/bradleys-sitting-2024/img_54.jpeg";
+import bradleys3 from "../assets/events/bradleys-sitting-2024/img_55.jpeg";
+import bradleys4 from "../assets/events/bradleys-sitting-2024/img_56.jpeg";
+import bradleys5 from "../assets/events/bradleys-sitting-2024/img_57.jpeg";
+
+import shaunsCover from "../assets/events/shauns-sitting-june-2024/img_63.jpeg";
+import shauns1 from "../assets/events/shauns-sitting-june-2024/img_58.jpeg";
+import shauns2 from "../assets/events/shauns-sitting-june-2024/img_59.jpeg";
+import shauns3 from "../assets/events/shauns-sitting-june-2024/img_60.jpeg";
+import shauns4 from "../assets/events/shauns-sitting-june-2024/img_61.jpeg";
+import shauns5 from "../assets/events/shauns-sitting-june-2024/img_62.jpeg";
+import shauns6 from "../assets/events/shauns-sitting-june-2024/img_63.jpeg";
 
 //import waynesCover from "../assets/events/waynes-sitting-may-2024/cover.jpg";
 //import waynes1 from "../assets/events/waynes-sitting-may-2024/image1.jpg";
@@ -168,58 +185,80 @@ const eventData = [
       { id: 3, src: brandons3, caption: "Single malt collection" },
     ],
   },
-  // {
-  //   id: 6,
-  //   title: "John's Sitting",
-  //   date: "8th March 2025",
-  //   coverImage: johnsCover,
-  //   description: "Mixed Range",
-  //   images: [
-  //     { id: 1, src: johns1, caption: "Mixed whiskey tasting" },
-  //     { id: 2, src: johns2, caption: "Tasting notes session" },
-  //     { id: 3, src: johns3, caption: "Group photo" },
-  //     { id: 4, src: johns4, caption: "Mixed collection" },
-  //   ],
-  // },
-  // {
-  //   id: 7,
-  //   title: "Gaba's Sitting",
-  //   date: "14th December 2024",
-  //   coverImage: gabasCover,
-  //   description: "Another Mixed bag",
-  //   images: [
-  //     { id: 1, src: gabas1, caption: "Mixed bag tasting" },
-  //     { id: 2, src: gabas2, caption: "Members enjoying" },
-  //     { id: 3, src: gabas3, caption: "Event setup" },
-  //     { id: 4, src: gabas4, caption: "Mixed selection" },
-  //   ],
-  // },
-  // {
-  //   id: 8,
-  //   title: "Kurt's Sitting",
-  //   date: "26th October 2024",
-  //   coverImage: kurtsOctCover,
-  //   description: "Range from Around the World",
-  //   images: [
-  //     { id: 1, src: kurtsOct1, caption: "World whiskey tasting" },
-  //     { id: 2, src: kurtsOct2, caption: "Group discussion" },
-  //     { id: 3, src: kurtsOct3, caption: "World collection" },
-  //     { id: 4, src: kurtsOct4, caption: "Event highlights" },
-  //   ],
-  // },
-  // {
-  //   id: 9,
-  //   title: "Shaun's Sitting",
-  //   date: "22nd June 2024",
-  //   coverImage: shaunsCover,
-  //   description: "These Little Asians",
-  //   images: [
-  //     { id: 1, src: shauns1, caption: "Asian whiskey tasting" },
-  //     { id: 2, src: shauns2, caption: "Tasting notes session" },
-  //     { id: 3, src: shauns3, caption: "Group photo" },
-  //     { id: 4, src: shauns4, caption: "Asian collection" },
-  //   ],
-  // },
+  {
+    id: 6,
+    title: "John's Sitting",
+    date: "8th March 2025",
+    coverImage: johnsCover,
+    description: "Mixed Range",
+    images: [
+      { id: 1, src: johns1, caption: "Mixed whiskey tasting" },
+      { id: 2, src: johns2, caption: "Tasting notes session" },
+      { id: 3, src: johns3, caption: "Group photo" },
+      { id: 4, src: johns4, caption: "Mixed collection" },
+      { id: 5, src: johns5, caption: "Mixed collection" },
+      { id: 6, src: johns6, caption: "Mixed collection" },
+    ],
+  },
+  {
+    id: 7,
+    title: "Gaba's Sitting",
+    date: "14th December 2024",
+    coverImage: gabasCover,
+    description: "Another Mixed bag",
+    images: [
+      { id: 1, src: gabas1, caption: "Mixed bag tasting" },
+      { id: 2, src: gabas2, caption: "Members enjoying" },
+      { id: 3, src: gabas3, caption: "Event setup" },
+      { id: 4, src: gabas4, caption: "Mixed selection" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Kurt's Sitting",
+    date: "26th October 2024",
+    coverImage: kurtsOctCover,
+    description: "Range from Around the World",
+    images: [
+      { id: 1, src: kurtsOct1, caption: "World whiskey tasting" },
+      { id: 2, src: kurtsOct2, caption: "Group discussion" },
+      { id: 3, src: kurtsOct3, caption: "World collection" },
+      { id: 4, src: kurtsOct4, caption: "Event highlights" },
+      { id: 5, src: kurtsOct5, caption: "Event highlights" },
+      { id: 6, src: kurtsOct6, caption: "Event highlights" },
+      { id: 7, src: kurtsOct7, caption: "Event highlights" },
+      { id: 8, src: kurtsOct8, caption: "Event highlights" },
+    ],
+  },
+  {
+    id: 9,
+    title: "Bradley's Sitting",
+    date: "15th September 2024",
+    coverImage: bradleysCover,
+    description: "Premium Single Malts",
+    images: [
+      { id: 1, src: bradleys1, caption: "Premium single malt tasting" },
+      { id: 2, src: bradleys2, caption: "Tasting notes session" },
+      { id: 3, src: bradleys3, caption: "Group discussion" },
+      { id: 4, src: bradleys4, caption: "Premium collection" },
+      { id: 5, src: bradleys5, caption: "Premium collection" },
+    ],
+  },
+  {
+    id: 10,
+    title: "Shaun's Sitting",
+    date: "22nd June 2024",
+    coverImage: shaunsCover,
+    description: "These Little Asians",
+    images: [
+      { id: 1, src: shauns1, caption: "Asian whiskey tasting" },
+      { id: 2, src: shauns2, caption: "Tasting notes session" },
+      { id: 3, src: shauns3, caption: "Group photo" },
+      { id: 4, src: shauns4, caption: "Asian collection" },
+      { id: 5, src: shauns5, caption: "Asian collection" },
+      { id: 6, src: shauns6, caption: "Asian collection" },
+    ],
+  },
   // {
   //   id: 10,
   //   title: "Wayne's Sitting",
