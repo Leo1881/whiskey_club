@@ -94,17 +94,59 @@ import shauns4 from "../assets/events/shauns-sitting-june-2024/img_61.jpeg";
 import shauns5 from "../assets/events/shauns-sitting-june-2024/img_62.jpeg";
 import shauns6 from "../assets/events/shauns-sitting-june-2024/img_63.jpeg";
 
-//import waynesCover from "../assets/events/waynes-sitting-may-2024/cover.jpg";
-//import waynes1 from "../assets/events/waynes-sitting-may-2024/image1.jpg";
-//import waynes2 from "../assets/events/waynes-sitting-may-2024/image2.jpg";
-//import waynes3 from "../assets/events/waynes-sitting-may-2024/image3.jpg";
-//import waynes4 from "../assets/events/waynes-sitting-may-2024/image4.jpg";
+import waynesCover from "../assets/events/waynes-sitting-may-2024/img_73.jpeg";
+import waynes1 from "../assets/events/waynes-sitting-may-2024/img_64.jpeg";
+import waynes2 from "../assets/events/waynes-sitting-may-2024/img_65.jpeg";
+import waynes3 from "../assets/events/waynes-sitting-may-2024/img_66.jpeg";
+import waynes4 from "../assets/events/waynes-sitting-may-2024/img_67.jpeg";
+import waynes5 from "../assets/events/waynes-sitting-may-2024/img_68.jpeg";
+import waynes6 from "../assets/events/waynes-sitting-may-2024/img_69.jpeg";
+import waynes7 from "../assets/events/waynes-sitting-may-2024/img_70.jpeg";
+import waynes8 from "../assets/events/waynes-sitting-may-2024/img_71.jpeg";
+import waynes9 from "../assets/events/waynes-sitting-may-2024/img_72.jpeg";
+import waynes10 from "../assets/events/waynes-sitting-may-2024/img_73.jpeg";
 
-//import leesCover from "../assets/events/lees-sitting-march-2024/cover.jpg";
-//import lees1 from "../assets/events/lees-sitting-march-2024/image1.jpg";
-//import lees2 from "../assets/events/lees-sitting-march-2024/image2.jpg";
-//import lees3 from "../assets/events/lees-sitting-march-2024/image3.jpg";
-//import lees4 from "../assets/events/lees-sitting-march-2024/image4.jpg";
+import leesCover from "../assets/events/lees-sitting-march-2024/img_82.jpeg";
+import lees1 from "../assets/events/lees-sitting-march-2024/img_74.jpeg";
+import lees2 from "../assets/events/lees-sitting-march-2024/img_75.jpeg";
+import lees3 from "../assets/events/lees-sitting-march-2024/img_76.jpeg";
+import lees4 from "../assets/events/lees-sitting-march-2024/img_77.jpeg";
+import lees5 from "../assets/events/lees-sitting-march-2024/img_78.jpeg";
+import lees6 from "../assets/events/lees-sitting-march-2024/img_79.jpeg";
+import lees7 from "../assets/events/lees-sitting-march-2024/img_80.jpeg";
+import lees8 from "../assets/events/lees-sitting-march-2024/img_81.jpeg";
+import lees9 from "../assets/events/lees-sitting-march-2024/img_82.jpeg";
+
+import mitchsCover from "../assets/events/mitchs-sitting-2024/img_88.jpeg";
+import mitchs1 from "../assets/events/mitchs-sitting-2024/img_83.jpeg";
+import mitchs2 from "../assets/events/mitchs-sitting-2024/img_84.jpeg";
+import mitchs3 from "../assets/events/mitchs-sitting-2024/img_85.jpeg";
+import mitchs4 from "../assets/events/mitchs-sitting-2024/img_86.jpeg";
+import mitchs5 from "../assets/events/mitchs-sitting-2024/img_87.jpeg";
+import mitchs6 from "../assets/events/mitchs-sitting-2024/img_88.jpeg";
+
+import rogersCover2 from "../assets/events/rogers-sitting-2024/img_92.jpeg";
+import rogers21 from "../assets/events/rogers-sitting-2024/img_89.jpeg";
+import rogers22 from "../assets/events/rogers-sitting-2024/img_90.jpeg";
+import rogers23 from "../assets/events/rogers-sitting-2024/img_91.jpeg";
+import rogers24 from "../assets/events/rogers-sitting-2024/img_92.jpeg";
+import rogers25 from "../assets/events/rogers-sitting-2024/img_93.jpeg";
+
+import marksCover from "../assets/events/marks-sitting-2024/img_100.jpeg";
+import marks1 from "../assets/events/marks-sitting-2024/img_100.jpeg";
+import marks2 from "../assets/events/marks-sitting-2024/img_94.jpeg";
+import marks3 from "../assets/events/marks-sitting-2024/img_95.jpeg";
+import marks4 from "../assets/events/marks-sitting-2024/img_96.jpeg";
+import marks5 from "../assets/events/marks-sitting-2024/img_97.jpeg";
+import marks6 from "../assets/events/marks-sitting-2024/img_98.jpeg";
+import marks7 from "../assets/events/marks-sitting-2024/img_99.jpeg";
+
+import brandonsCover2 from "../assets/events/brandons-sitting-2023/img_105.jpeg";
+import brandons21 from "../assets/events/brandons-sitting-2023/img_101.jpeg";
+import brandons22 from "../assets/events/brandons-sitting-2023/img_102.jpeg";
+import brandons23 from "../assets/events/brandons-sitting-2023/img_103.jpeg";
+import brandons24 from "../assets/events/brandons-sitting-2023/img_104.jpeg";
+import brandons25 from "../assets/events/brandons-sitting-2023/img_105.jpeg";
 
 // Event data for 1001 Whiskies Club
 const eventData = [
@@ -259,32 +301,102 @@ const eventData = [
       { id: 6, src: shauns6, caption: "Asian collection" },
     ],
   },
-  // {
-  //   id: 10,
-  //   title: "Wayne's Sitting",
-  //   date: "4th May 2024",
-  //   coverImage: waynesCover,
-  //   description: "Local is Lekke",
-  //   images: [
-  //     { id: 1, src: waynes1, caption: "Local whiskey tasting" },
-  //     { id: 2, src: waynes2, caption: "Members enjoying" },
-  //     { id: 3, src: waynes3, caption: "Event setup" },
-  //     { id: 4, src: waynes4, caption: "Local selection" },
-  //   ],
-  // },
-  // {
-  //   id: 11,
-  //   title: "Lee's Sitting",
-  //   date: "2nd March 2024",
-  //   coverImage: leesCover,
-  //   description: "Mixed bag",
-  //   images: [
-  //     { id: 1, src: lees1, caption: "Mixed bag tasting" },
-  //     { id: 2, src: lees2, caption: "Group discussion" },
-  //     { id: 3, src: lees3, caption: "Mixed collection" },
-  //     { id: 4, src: lees4, caption: "Event highlights" },
-  //   ],
-  // },
+  {
+    id: 10,
+    title: "Wayne's Sitting",
+    date: "4th May 2024",
+    coverImage: waynesCover,
+    description: "Local is Lekke",
+    images: [
+      { id: 1, src: waynes1, caption: "Local whiskey tasting" },
+      { id: 2, src: waynes2, caption: "Members enjoying" },
+      { id: 3, src: waynes3, caption: "Event setup" },
+      { id: 4, src: waynes4, caption: "Local selection" },
+      { id: 5, src: waynes5, caption: "Local selection" },
+      { id: 6, src: waynes6, caption: "Local selection" },
+      { id: 7, src: waynes7, caption: "Local selection" },
+      { id: 8, src: waynes8, caption: "Local selection" },
+      { id: 9, src: waynes9, caption: "Local selection" },
+      { id: 10, src: waynes10, caption: "Local selection" },
+    ],
+  },
+  {
+    id: 11,
+    title: "Lee's Sitting",
+    date: "2nd March 2024",
+    coverImage: leesCover,
+    description: "Mixed bag",
+    images: [
+      { id: 1, src: lees1, caption: "Mixed bag tasting" },
+      { id: 2, src: lees2, caption: "Group discussion" },
+      { id: 3, src: lees3, caption: "Mixed collection" },
+      { id: 4, src: lees4, caption: "Event highlights" },
+      { id: 5, src: lees5, caption: "Event highlights" },
+      { id: 6, src: lees6, caption: "Event highlights" },
+      { id: 7, src: lees7, caption: "Event highlights" },
+      { id: 8, src: lees8, caption: "Event highlights" },
+      { id: 9, src: lees9, caption: "Event highlights" },
+    ],
+  },
+  {
+    id: 12,
+    title: "Mitch's Sitting",
+    date: "8th December 2023",
+    coverImage: mitchsCover,
+    description: "Craft Whiskey Collection",
+    images: [
+      { id: 1, src: mitchs1, caption: "Craft whiskey tasting" },
+      { id: 2, src: mitchs2, caption: "Tasting notes session" },
+      { id: 3, src: mitchs3, caption: "Group discussion" },
+      { id: 4, src: mitchs4, caption: "Craft collection" },
+      { id: 5, src: mitchs5, caption: "Craft collection" },
+      { id: 6, src: mitchs6, caption: "Craft collection" },
+    ],
+  },
+  {
+    id: 13,
+    title: "Roger's Sitting",
+    date: "11th November 2023",
+    coverImage: rogersCover2,
+    description: "Vintage Whiskey Selection",
+    images: [
+      { id: 1, src: rogers21, caption: "Vintage whiskey tasting" },
+      { id: 2, src: rogers22, caption: "Tasting notes session" },
+      { id: 3, src: rogers23, caption: "Group discussion" },
+      { id: 4, src: rogers24, caption: "Vintage collection" },
+      { id: 4, src: rogers25, caption: "Vintage collection" },
+    ],
+  },
+  {
+    id: 14,
+    title: "Mark's Sitting",
+    date: "28th October 2023",
+    coverImage: marksCover,
+    description: "International Whiskey Range",
+    images: [
+      { id: 1, src: marks1, caption: "International whiskey tasting" },
+      { id: 2, src: marks2, caption: "Tasting notes session" },
+      { id: 3, src: marks3, caption: "Group discussion" },
+      { id: 4, src: marks4, caption: "International collection" },
+      { id: 5, src: marks5, caption: "International collection" },
+      { id: 6, src: marks6, caption: "International collection" },
+      { id: 7, src: marks7, caption: "International collection" },
+    ],
+  },
+  {
+    id: 15,
+    title: "Brandon's Sitting",
+    date: "15th September 2023",
+    coverImage: brandonsCover2,
+    description: "Rare Whiskey Collection",
+    images: [
+      { id: 1, src: brandons21, caption: "Rare whiskey tasting" },
+      { id: 2, src: brandons22, caption: "Tasting notes session" },
+      { id: 3, src: brandons23, caption: "Group discussion" },
+      { id: 4, src: brandons24, caption: "Rare collection" },
+      { id: 5, src: brandons25, caption: "Rare collection" },
+    ],
+  },
 ];
 
 // Image component with loading state
